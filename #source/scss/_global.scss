@@ -1,0 +1,125 @@
+@media(min-width:1600px) {
+    .container {
+        max-width: 1544px;
+    }
+}
+
+body {
+    font-family: 'DegularText';
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 68px;
+    font-family: 'DegularDisplay';
+    font-weight: 400;
+    line-height: 74px;
+}
+
+h2 {
+    font-size: 51px;
+    line-height: 56px;
+    font-family: 'DegularDisplay';
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'DegularDisplay';
+    line-height: 130%;
+}
+
+h4 {
+    font-size: 29px;
+    line-height: 130%;
+    font-weight: 500;
+    font-family: 'Degular';
+}
+
+.bluebtn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 28px 5px;
+    border-radius: 32px;
+    background: #0E4271;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'DegularText';
+    transition: 0.3s;
+    min-height: 48px;
+
+    svg {
+        vertical-align: middle;
+        margin-top: -4px;
+
+        path {
+            transition: 0.3s;
+            stroke: #fff;
+        }
+    }
+
+    &:hover {
+        color: #0E4271;
+        background: #fff;
+
+        svg {
+            path {
+                stroke: #0E4271;
+            }
+        }
+    }
+}
+
+.transparentbtn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 28px 5px;
+    border-radius: 32px;
+    border: 1px solid #0E4271;
+    background: transparent;
+    text-transform: uppercase;
+    color: #0E4271;
+    font-size: 14px;
+    font-family: 'DegularText';
+    transition: 0.3s;
+    min-height: 48px;
+
+    svg {
+        vertical-align: middle;
+        margin-top: -4px;
+
+        path {
+            transition: 0.3s;
+            stroke: #0E4271;
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        background: #0E4271;
+
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-lightblue {
+    background: #E2F0F9;
+}
+
+.bg-babyblue {
+    background: #C7E3F8;
+}
