@@ -38,9 +38,34 @@ $(document).ready(function () {
         });
     });
 
+    // testimonials slider
+    var swiper = new Swiper(".testimonials__slider", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
 
+    // faq
+    $('.faqrow__header').click(function(){
+        $('.faqrow').not($(this).parent()).removeClass('active');
+        $('.faqrow__body').not($(this).next('.faqrow__body')).slideUp();
 
-
+        $(this).parent().toggleClass('active');
+        $(this).next('.faqrow__body').slideToggle();
+    });
 
 
 

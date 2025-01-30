@@ -18,11 +18,12 @@ h1 {
     font-family: 'DegularDisplay';
     font-weight: 400;
     line-height: 74px;
+    line-height: 110%;
 }
 
 h2 {
     font-size: 51px;
-    line-height: 56px;
+    line-height: 110%;
     font-family: 'DegularDisplay';
     font-weight: 400;
 }
@@ -57,6 +58,7 @@ h4 {
     svg {
         vertical-align: middle;
         margin-top: -4px;
+        transition: 0.3s;
 
         path {
             transition: 0.3s;
@@ -69,6 +71,7 @@ h4 {
         background: #fff;
 
         svg {
+            transform: translateX(5px);
             path {
                 stroke: #0E4271;
             }
@@ -76,7 +79,7 @@ h4 {
     }
 }
 
-.transparentbtn {
+.transparentbtn, .whitebtn {
     display: inline-flex;
     align-items: center;
     padding: 8px 28px 5px;
@@ -93,6 +96,7 @@ h4 {
     svg {
         vertical-align: middle;
         margin-top: -4px;
+        transition: 0.3s;
 
         path {
             transition: 0.3s;
@@ -105,11 +109,17 @@ h4 {
         background: #0E4271;
 
         svg {
+            transform: translateX(5px);
             path {
                 stroke: #fff;
             }
         }
     }
+}
+
+.whitebtn {
+    background: #fff;
+    border: 1px solid #fff;
 }
 
 img {
@@ -122,4 +132,40 @@ img {
 
 .bg-babyblue {
     background: #C7E3F8;
+}
+
+@media(max-width:1599.8px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
 }

@@ -77,26 +77,26 @@
     .imgswrap {
         position: relative;
 
-        img {
-            border-radius: 10px;
-        }
+        // img {
+        //     border-radius: 10px;
+        // }
 
-        &.imgswrap__center {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        // &.imgswrap__center {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-between;
 
-            img {
-                &:nth-child(1) {}
+        //     img {
+        //         &:nth-child(1) {}
 
-                &:nth-child(2) {
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-        }
+        //         &:nth-child(2) {
+        //             position: absolute;
+        //             right: 0;
+        //             top: 50%;
+        //             transform: translateY(-50%);
+        //         }
+        //     }
+        // }
     }
 
     h2 {
@@ -316,6 +316,8 @@
     border-radius: 10px;
     display: block;
     height: 100%;
+    transition: 0.5s;
+    transform: scale(1.001);
 
     .imgwrap {
         height: 258px;
@@ -391,6 +393,403 @@
             }
         }
     }
+
+    &:hover {
+        box-shadow: 0 0 10px #c0cfdd;
+        transform: scale(1.03);
+    }
+}
+
+.testimonials {
+    padding: 100px 0;
+}
+
+.testimonials__header {
+    margin-bottom: 72px;
+
+    h2 {
+        color: #0E4271;
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 0;
+        line-height: 130%;
+        font-size: 21px;
+        font-weight: 500;
+    }
+}
+
+.testimonial-slwrap {
+    background: #fff;
+    border-radius: 10px;
+    padding: 44px;
+    min-height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        color: #262626;
+        font-size: 21px;
+        line-height: 130%;
+        font-weight: 500;
+    }
+
+    .author {
+        color: #0E4271;
+        margin: 0;
+    }
+}
+
+.bottomslider-nav {
+    position: relative;
+    margin-top: 60px;
+
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination {
+        position: relative;
+        display: inline-block;
+        top: initial;
+        bottom: initial;
+        left: initial;
+        right: initial;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 33px;
+        height: 33px;
+        border: 1px solid #0E4271;
+        border-radius: 50%;
+        margin-top: 0;
+
+        &:hover {
+            background: #0E4271;
+
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+
+
+        svg {
+            width: 17px;
+            height: 17px;
+
+            path {
+                transition: 0.3s;
+                fill: #0E4271;
+            }
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        margin-right: 17px;
+    }
+
+    .swiper-button-next {
+        margin-left: 17px;
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background: transparent;
+            border: 1px solid #0E4271;
+            transition: 0.2s;
+
+            &.swiper-pagination-bullet-active {
+                width: 16px;
+                height: 16px;
+                background: #0E4271;
+            }
+        }
+    }
+
+    .transparentbtn {
+        min-height: 39px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.mentwellfaq-group {
+    padding: 139px 0 130px;
+    background: rgba(#8D99AF, 0.2);
+}
+
+.infobnr {
+    padding: 50px 50px 50px 60px;
+    display: flex;
+    align-items: center;
+    background: #0E4271;
+    border-radius: 10px;
+    margin-bottom: 47px;
+
+    .infobnr__info {
+        width: 100%;
+        max-width: 67%;
+        flex: 0 0 67%;
+        padding-right: 15px;
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 21px;
+            line-height: 130%;
+            margin-bottom: 40px;
+        }
+    }
+
+    .infobnr__imgwrap {
+        width: 100%;
+        max-width: 33%;
+        flex: 0 0 33%;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+.mentwellfaq-group {
+    .faqsection {
+        padding: 83px 0 63px;
+    }
+}
+
+
+.faqsection {
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+        color: #0E4271;
+    }
+}
+
+.faq {
+    width: 100%;
+    max-width: 876px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faqrow {
+    transition: 0.3s;
+}
+
+.faqrow.active {
+    background: #C7E3F8;
+
+    &.active {
+        .faqrow__header {
+            &::after {
+                transform: translateY(-50%) rotate(-180deg);
+            }
+        }
+    }
+}
+
+.faqrow__header {
+    padding: 21px 64px 21px 20px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+        background: url('../img/general/faq-arrow.svg') no-repeat center / 100%;
+    }
+
+    p {
+        margin: 0;
+        font-size: 21px;
+        line-height: 130%;
+        font-weight: 500;
+        color: #0E4271;
+    }
+}
+
+.faqrow__body {
+    padding: 8px 20px 35px 20px;
+    display: none;
+
+    p {
+        color: #0E4271;
+        font-size: 16px;
+        line-height: 140%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.infobnr.last {
+    margin-top: 67px;
+    margin-bottom: 0;
+}
+
+.infpic p:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width:1599.8px) {
+    .familyrun .familyrun__header {
+        margin-bottom: 60px;
+    }
+
+    .therapists__box {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .therapists__box .imgwrap {
+        height: 210px;
+    }
+
+    .therapists__box .descrwrap .name,
+    .therapists__box .descrwrap .position,
+    .therapists__box .descrwrap .certificate,
+    .whychoose__box h4 {
+        margin-bottom: 8px;
+    }
+
+    .infobnr {
+        margin-bottom: 30px;
+    }
+
+    .familyrun {
+        padding: 100px 0 90px;
+    }
+
+    .faqrow__header {
+        padding: 17px 64px 17px 20px;
+    }
+
+    .testimonial-slwrap p {
+        font-size: 18px;
+    }
+
+
+    .infsteps .bottom-sectbtn {
+        margin-top: 60px;
+    }
+
+    .mentwellfaq-group {
+        padding: 100px 0;
+    }
+
+    .meet-our-therapists__header,
+    .testimonials__header {
+        margin-bottom: 60px;
+    }
+
+    .therapists__box .descrwrap .name {
+        font-size: 20px;
+    }
+
+    .herosection__info p,
+    .familyrun .familyrun__header p {
+        font-size: 18px;
+    }
+
+    .herosection__info h1,
+    .herosection__info h4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .herosection__info p {
+        font-size: 16px;
+    }
+
+    .infsteps h2 {
+        margin-bottom: 60px;
+    }
+
+    .infsteps__col {
+        width: 32%;
+    }
+
+
+    .infsteps__box .descrwrap .step {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .whychoose__box {
+        padding: 0 15px 15px 15px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .herosection__info h1 {
+        max-width: 500px;
+    }
+
+    .whychoose__box h4 {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .whychoose__box {
+        padding: 0 10px 10px 10px;
+    }
+
+    .familyrun .descrwrap p+img {
+        margin-top: 30px;
+    }
+
+    .meet-our-therapists__body {
+        .row {
+            margin-left: -5px;
+            margin-right: -5px;
+            .col-lg {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+
+    .whychoose h2 {
+        margin-bottom: 60px;
+    }
+
+    .infsteps h2 {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -402,18 +801,9 @@
 
 
 
+
+
 // 0E4271
-
-
-
-
-
-
-
-
-
-
-
 
 
 
