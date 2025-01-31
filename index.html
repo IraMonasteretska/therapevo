@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="row mobilemenu">
                 <div class="col-lg-4">
                     <ul>
                         <li>
@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 justify-content-center">
+                <div class="col-lg-4 justify-content-center hidemob">
                     <a href="#" class="header__logo">
                         <img src="img/general/logo.svg" alt="logo">
                     </a>
@@ -120,6 +120,14 @@
                             <a href="#">Contact Us</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div class="header__mobilesect">
+                <a href="#" class="header__logo">
+                    <img src="img/general/logo.svg" alt="logo">
+                </a>
+                <div class="header__burger">
+                    <button class="burger burger2"><span></span></button>
                 </div>
             </div>
         </div>
@@ -191,12 +199,12 @@
         <section class="infpic bg-lightblue">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 col-lg-6">
+                    <div class="col-xl-5 col-md-6">
                         <div class="imgswrap">
                             <img src="img/main/img11.png" alt="img">
                         </div>
                     </div>
-                    <div class="col-xl-4 offset-xl-1  col-lg-6">
+                    <div class="col-xl-4 offset-xl-1 col-md-6">
                         <h2>
                             Discover <br>
                             a New Path Forward
@@ -299,11 +307,13 @@
                             <div class="icon">
                                 <img src="img/main/whychoose1.svg" alt="icon">
                             </div>
-                            <h4>Right Fit Guarantee</h4>
-                            <p>
-                                If your therapist isn’t the right match, we’ll credit up to two sessions to help you
-                                find someone better suited to your needs.
-                            </p>
+                            <div class="wrapper">
+                                <h4>Right Fit Guarantee</h4>
+                                <p>
+                                    If your therapist isn’t the right match, we’ll credit up to two sessions to help you
+                                    find someone better suited to your needs.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -311,11 +321,14 @@
                             <div class="icon">
                                 <img src="img/main/whychoose2.svg" alt="icon">
                             </div>
-                            <h4>Dedicated Focus</h4>
-                            <p>
-                                Unlike "big-box" therapy platforms, our one-on-one sessions ensure undivided attention
-                                from your therapist—no distractions, no multitasking.
-                            </p>
+                            <div class="wrapper">
+                                <h4>Dedicated Focus</h4>
+                                <p>
+                                    Unlike "big-box" therapy platforms, our one-on-one sessions ensure undivided
+                                    attention
+                                    from your therapist—no distractions, no multitasking.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -323,11 +336,14 @@
                             <div class="icon">
                                 <img src="img/main/whychoose3.svg" alt="icon">
                             </div>
-                            <h4>Proven Expertise in Online Therapy</h4>
-                            <p>
-                                With over a decade of experience, we pioneered virtual therapy long before it became the
-                                norm, delivering effective and meaningful care.
-                            </p>
+                            <div class="wrapper">
+                                <h4>Proven Expertise in Online Therapy</h4>
+                                <p>
+                                    With over a decade of experience, we pioneered virtual therapy long before it became
+                                    the
+                                    norm, delivering effective and meaningful care.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -335,11 +351,13 @@
                             <div class="icon">
                                 <img src="img/main/whychoose4.svg" alt="icon">
                             </div>
-                            <h4>Ultimate Convenience</h4>
-                            <p>
-                                Save time and energy with no commute—access your sessions securely from anywhere, on
-                                your schedule.
-                            </p>
+                            <div class="wrapper">
+                                <h4>Ultimate Convenience</h4>
+                                <p>
+                                    Save time and energy with no commute—access your sessions securely from anywhere, on
+                                    your schedule.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -347,11 +365,13 @@
                             <div class="icon">
                                 <img src="img/main/whychoose5.svg" alt="icon">
                             </div>
-                            <h4>Expert Therapists</h4>
-                            <p>
-                                Work with highly trained, licensed professionals who hold advanced certifications to
-                                provide specialized care you won’t find elsewhere.
-                            </p>
+                            <div class="wrapper">
+                                <h4>Expert Therapists</h4>
+                                <p>
+                                    Work with highly trained, licensed professionals who hold advanced certifications to
+                                    provide specialized care you won’t find elsewhere.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -367,7 +387,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="descrwrap">
                                     <p>
                                         At Therapevo, you’re not just working with a company—you’re connecting with a
@@ -379,7 +399,7 @@
                                     <img src="img/main/img6.jpg" alt="img">
                                 </div>
                             </div>
-                            <div class="col-lg-6 text-end">
+                            <div class="col-lg-6 col-md-6 text-end">
                                 <div class="descrwrap">
                                     <div class="groupimg">
                                         <img src="img/main/img7.jpg" alt="img">
@@ -406,10 +426,10 @@
         <section class="meet-our-therapists bg-lightblue">
             <div class="container">
                 <div class="meet-our-therapists__header row align-items-center">
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 col-md-8">
                         <h3>Meet our licensed therapists: </h3>
                     </div>
-                    <div class="col-lg-3 text-end">
+                    <div class="col-lg-3 col-md-4 text-md-end text-start">
                         <a href="#" class="transparentbtn">
                             <span>
                                 all therapists
@@ -423,8 +443,8 @@
                     </div>
                 </div>
                 <div class="meet-our-therapists__body">
-                    <div class="row">
-                        <div class="col-lg">
+                    <div class="row justify-content-sm-center">
+                        <div class="col-lg col-md-4 col-sm-6">
                             <a href="#" class="therapists__box">
                                 <div class="imgwrap">
                                     <img src="img/main/therapist1.jpg" alt="img">
@@ -449,7 +469,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-md-4 col-sm-6">
                             <a href="#" class="therapists__box">
                                 <div class="imgwrap">
                                     <img src="img/main/therapist2.jpg" alt="img">
@@ -474,7 +494,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-md-4 col-sm-6">
                             <a href="#" class="therapists__box">
                                 <div class="imgwrap">
                                     <img src="img/main/therapist3.jpg" alt="img">
@@ -499,7 +519,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-md-4 col-sm-6">
                             <a href="#" class="therapists__box">
                                 <div class="imgwrap">
                                     <img src="img/main/therapist4.jpg" alt="img">
@@ -520,7 +540,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-md-4 col-sm-6">
                             <a href="#" class="therapists__box">
                                 <div class="imgwrap">
                                     <img src="img/main/therapist5.jpg" alt="img">
@@ -609,7 +629,7 @@
                         </div>
                         <div class="bottomslider-nav">
                             <div class="row align-items-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-md-7 col-sm-6">
                                     <div class="swiper-button-prev">
                                         <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -629,7 +649,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-lg-4 text-end">
+                                <div class="col-lg-4 col-md-5 col-sm-6 text-sm-end text-center">
                                     <a href="#" class="transparentbtn">leave a review</a>
                                 </div>
                             </div>
@@ -898,7 +918,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"  target="_blank">
+                            <a href="#" target="_blank">
                                 <img src="img/general/footer__inst.svg" alt="instagram">
                             </a>
                         </li>

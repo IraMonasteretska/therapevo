@@ -7,6 +7,10 @@
 body {
     font-family: 'DegularText';
     font-size: 16px;
+
+    &.hidden {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -54,6 +58,7 @@ h4 {
     font-family: 'DegularText';
     transition: 0.3s;
     min-height: 48px;
+    text-align: center;
 
     svg {
         vertical-align: middle;
@@ -72,6 +77,7 @@ h4 {
 
         svg {
             transform: translateX(5px);
+
             path {
                 stroke: #0E4271;
             }
@@ -79,7 +85,8 @@ h4 {
     }
 }
 
-.transparentbtn, .whitebtn {
+.transparentbtn,
+.whitebtn {
     display: inline-flex;
     align-items: center;
     padding: 8px 28px 5px;
@@ -92,6 +99,7 @@ h4 {
     font-family: 'DegularText';
     transition: 0.3s;
     min-height: 48px;
+    text-align: center;
 
     svg {
         vertical-align: middle;
@@ -110,6 +118,7 @@ h4 {
 
         svg {
             transform: translateX(5px);
+
             path {
                 stroke: #fff;
             }
@@ -167,5 +176,36 @@ img {
 
     h4 {
         font-size: 21px;
+    }
+}
+
+@media(max-width:991.8px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:767.8px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+
+    .transparentbtn,
+    .whitebtn {
+        padding: 6px 20px 3px;
+        min-height: 42px;
     }
 }

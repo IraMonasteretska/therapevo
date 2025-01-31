@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     // testimonials slider
     var swiper = new Swiper(".testimonials__slider", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         speed: 1000,
@@ -56,6 +56,11 @@ $(document).ready(function () {
             delay: 4000,
             disableOnInteraction: false,
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+          },
     });
 
     // faq
@@ -67,7 +72,19 @@ $(document).ready(function () {
         $(this).next('.faqrow__body').slideToggle();
     });
 
+    // burger menu
+    if ($('.burger2').length) {
+        (function () {
+            var burger2;
+            burger2 = document.querySelector(".burger2");
+            burger2.addEventListener("click", function () {
+                return burger2.classList.toggle("on");
+            });
 
+        }).call(this);
+    }
+
+   
 
 
 })
