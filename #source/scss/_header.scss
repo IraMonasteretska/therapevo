@@ -368,8 +368,27 @@ header.header .col-lg-4:last-child {
 @media(max-width:991.8px) {
 
     .mobilemenu {
-        display: none;
+        transition: 0.5s;
+        transform: translateX(100%);
+        display: block;
+        background: #fff;
+        margin: 0;
+        border-top: 1px solid #0E4271;
+        padding: 40px;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        height: calc(100vh - 100px);
+        width: 100%;
+        overflow: auto;
+
+        &.show {
+            transform: translateX(0);
+        }
     }
+
+
+
 
     .header__burger {
         display: inline-flex;
@@ -482,23 +501,6 @@ header.header .col-lg-4:last-child {
         justify-content: space-between;
     }
 
-    .mobilemenu {
-        background: #fff;
-        transform: translate(0);
-        margin: 0;
-        border-top: 1px solid #0E4271;
-        padding: 40px;
-    }
-
-    .mobilemenu.show {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 100px;
-        height: calc(100vh - 100px);
-        width: 100%;
-    }
-
     .hidemob {
         display: none !important;
     }
@@ -508,7 +510,7 @@ header.header .col-lg-4:last-child {
         text-align: left !important;
     }
 
-    header.header ul:not(.submenu,.sublist) {
+    header.header ul:not(.submenu, .sublist) {
         margin-bottom: 0;
 
         li {
@@ -522,7 +524,102 @@ header.header .col-lg-4:last-child {
     }
 
     .submenu-item>a:after {
-        top: 3px;
+        top: 5px;
+    }
+
+    .submenu-item .megamenu,
+    .submenu-item .sublist {
+        position: relative;
+        border: none;
+        display: none;
+        opacity: 1;
+        z-index: 1;
+        visibility: visible;
+        padding-top: 15px;
+
+        &.show {
+            display: block;
+        }
+
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .submenu-item .megamenu .title {
+        font-size: 22px;
+    }
+
+    .submenu-item .megamenu .col-lg-3:after {
+        display: none;
+    }
+
+
+
+
+
+
+    header.header ul:not(.submenu) li a,
+    header.header ul:not(.sublist) li a {
+        font-size: 24px;
+    }
+
+    .submenu-item .megamenu {
+        padding-left: 20px;
+        padding-bottom: 0;
+
+        .title span {
+            font-size: 20px;
+        }
+    }
+
+    .submenu-item .megamenu ul {
+        margin-bottom: 20px;
+
+        li a {
+            font-size: 16px !important;
+        }
+    }
+
+    .submenu-item .sublist {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-left: 20px;
+        width: 100%;
+
+        li a {
+            padding: 0;
+            font-size: 20px !important;
+
+            &:hover {
+                background: transparent;
+                color: #0E4271;
+            }
+        }
+    }
+
+    .submenu-item .sublist>li>ul {
+        position: relative;
+        left: 0;
+        border: none;
+        padding-left: 20px;
+        padding-top: 5px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+
+        li a {
+            font-size: 16px;
+        }
+    }
+
+    .submenu-item .sublist li a svg {
+        display: none;
+    }
+
+    .submenu-item .sublist>li>ul li a {
+        font-size: 16px !important;
     }
 
 }
@@ -531,11 +628,59 @@ header.header .col-lg-4:last-child {
     header.header {
         height: 70px;
     }
-    
+
     .header__logo img {
         max-width: 140px;
     }
 
+    .mobilemenu {
+        top: 70px;
+        height: calc(100vh - 70px);
+        padding: 20px 10px;
+    }
+
+    header.header ul:not(.sublist) li a, header.header ul:not(.submenu) li a {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .submenu-item .megamenu .title span,
+    .submenu-item .megamenu .title {
+        font-size: 19px;
+    }
+
+    .submenu-item .sublist {
+        padding: 10px 0 0 10px;
+    }
+
+    .submenu-item .sublist li a {
+        font-size: 19px !important;
+    }
+
+
+    header.header ul:not(.submenu,.sublist) li {
+        margin-bottom: 5px;
+    }
+
+    .submenu-item .megamenu {
+        padding: 10px 0 0 10px;
+    }
+
+    .submenu-item .megamenu .title {
+        margin-bottom: 5px;
+    }
+
+    .submenu-item .megamenu ul {
+        margin-bottom: 15px;
+    }
+
+    .submenu-item .sublist li a {
+        min-height: inherit;
+    }
+
+    .submenu-item .sublist>li>ul {
+        margin-bottom: 15px;
+    }
 
 }
 

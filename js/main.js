@@ -25,6 +25,9 @@ $(document).ready(function () {
 
     // header menu
     $('.submenu-item').click(function () {
+        $('.submenu-item').not($(this)).removeClass('active');
+        $('.submenu-item').not($(this)).find('.megamenu, .sublist').removeClass('show');
+
         $(this).toggleClass('active');
         $(this).find('.megamenu').toggleClass('show');
 
@@ -84,7 +87,16 @@ $(document).ready(function () {
         }).call(this);
     }
 
-   
+    $('.burger').click(function () {
+        $('.adaptmenu').toggleClass('show');
+        $('.header__bottsect').toggleClass('open');
+    })
+
+    $('.burger').click(function(){
+        $('body').toggleClass('hidden');
+        $('.mobilemenu').toggleClass('show');
+        window.scrollTo(0, 0);
+    })
 
 
 })
