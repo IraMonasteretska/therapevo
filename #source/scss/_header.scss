@@ -31,6 +31,7 @@ header.header {
     }
 }
 
+
 .header__logo {
     margin-bottom: 24px;
 }
@@ -85,18 +86,19 @@ header.header {
         }
 
         .title {
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             color: #0E4271;
             font-size: 21px;
             line-height: 27px;
             font-weight: 500;
-            display: block;
+            display: inline-block;
 
 
             span {
                 transition: 0.3s;
                 display: inline-block;
                 position: relative;
+                font-size: 21px;
 
                 &::after {
                     content: '';

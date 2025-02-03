@@ -22,6 +22,7 @@ $(document).ready(function () {
             },
         },
     });
+    
 
     // header menu
     $('.submenu-item').click(function () {
@@ -63,11 +64,11 @@ $(document).ready(function () {
             768: {
                 slidesPerView: 2,
             },
-          },
+        },
     });
 
     // faq
-    $('.faqrow__header').click(function(){
+    $('.faqrow__header').click(function () {
         $('.faqrow').not($(this).parent()).removeClass('active');
         $('.faqrow__body').not($(this).next('.faqrow__body')).slideUp();
 
@@ -92,11 +93,49 @@ $(document).ready(function () {
         $('.header__bottsect').toggleClass('open');
     })
 
-    $('.burger').click(function(){
+    $('.burger').click(function () {
         $('body').toggleClass('hidden');
         $('.mobilemenu').toggleClass('show');
         window.scrollTo(0, 0);
     })
+
+    //   Space containers
+    var windowWidth = $(document).width(),
+        containerWidth = $('.container').width(),
+        paddingContainer = ((windowWidth - containerWidth) / 2)
+    $('.spaceleft').css('padding-left', paddingContainer);
+    $('.spaceright').css('padding-right', paddingContainer);
+
+
+    $(window).resize(function () {
+        var windowWidth = $(document).width(),
+            containerWidth = $('.container').width(),
+            paddingContainer = ((windowWidth - containerWidth) / 2)
+        $('.spaceleft').css('padding-left', paddingContainer);
+        $('.spaceright').css('padding-right', paddingContainer);
+
+    });
+
+    // meet slider (about page)
+    var swiper = new Swiper(".meetslider", {
+        slidesPerView: 3,
+        spaceBetween: 99,
+        loop: true,
+        speed: 1200,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+
+
+
 
 
 })
