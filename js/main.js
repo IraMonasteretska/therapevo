@@ -22,7 +22,6 @@ $(document).ready(function () {
             },
         },
     });
-    
 
     // header menu
     $('.submenu-item').click(function () {
@@ -118,8 +117,8 @@ $(document).ready(function () {
 
     // meet slider (about page)
     var swiper = new Swiper(".meetslider", {
-        slidesPerView: 3,
-        spaceBetween: 99,
+        // slidesPerView: 3,
+        // spaceBetween: 99,
         loop: true,
         speed: 1200,
         autoplay: {
@@ -131,8 +130,23 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-    });
 
+        breakpoints: {
+            576: {
+                spaceBetween: 60,
+                slidesPerView: 2,
+            },
+            992: {
+                spaceBetween: 60,
+                slidesPerView: 3,
+            },
+
+            1300: {
+                spaceBetween: 99,
+                slidesPerView: 3,
+            },
+        },
+    });
 
 
 

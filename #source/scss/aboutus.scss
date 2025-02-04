@@ -29,6 +29,7 @@
         padding-bottom: 186px;
     }
 
+
 }
 
 .infpic {
@@ -553,6 +554,90 @@
     position: relative;
 }
 
+.tyforvis {
+    padding: 90px 0;
+
+    .imgwrapper {
+        img {
+            vertical-align: top;
+        }
+
+        border: 1px solid #C7E3F8;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.tyforvis__description {
+    h3 {
+        color: #0E4271;
+        margin-bottom: 28px;
+    }
+
+    h5 {
+        color: #0E4271;
+        font-size: 21px;
+        line-height: 130%;
+        font-weight: 500;
+        margin-bottom: 28px;
+    }
+
+    p {
+        color: #0E4271;
+        font-size: 14px;
+        line-height: 144%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            display: block;
+            margin: 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .hero-pages {
+        height: calc(100vh - 100px);
+    }
+
+    .hero-pages .hero-pages__content {
+        padding-bottom: 120px;
+    }
+
+    .whoweare__boxes {
+        margin: 40px 0;
+    }
+
+    .chesssect__text {
+        padding: 60px 80px 60px 80px;
+    }
+
+    .chesssect__text ol li,
+    .chesssect__text ul li {
+        margin-bottom: 10px;
+    }
+
+    .chesssect__img {
+        min-height: 400px;
+    }
+
+    .infosection1 .imgwrap {
+        margin: 60px 0 40px;
+    }
+
+    .quoteblock p {
+        font-size: 21px;
+    }
+
+    .meetslide p {
+        font-size: 18px;
+    }
 
 
 
@@ -561,9 +646,454 @@
 
 
 
+    .chesssect__text p,
+    .chesssect__text ol,
+    .chesssect__text ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .infpic h2 br {
+        display: none;
+    }
+
+    .whoweare {
+        padding: 100px 0;
+    }
+
+    .whoweare__box .imgwrap {
+        margin-bottom: 15px;
+    }
+
+    .whoweare__box h4 {
+        margin-bottom: 16px;
+    }
+
+    .chesssect__text ol li,
+    .chesssect__text ul li {
+        margin-bottom: 7px;
+    }
+
+    .infosection1 .imgwrap {
+        margin: 40px 0;
+    }
+
+    .quoteblock p {
+        max-width: 650px;
+    }
+
+    .stepsection__box-right .imgwrap {
+        height: 250px;
+    }
+
+    .stepsection__box-left .count {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .stepsection__box-left h4 {
+        margin-bottom: 8px;
+    }
+
+    .stepsection__box-left h5 {
+        font-size: 18px;
+    }
+
+    .stepsection__box-left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .stepsection__box:nth-child(2n) .stepsection__box-left {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .stepsection__box-left ul li {
+        padding-left: 16px;
+        font-size: 15px;
+    }
+
+    .stepsection__box-left ul li:before {
+        left: 5px;
+    }
+
+    .meetslide .imgwrap img {
+        height: auto;
+    }
+
+    .meetslide .imgwrap {
+        margin-bottom: 30px;
+    }
+
+    .tyforvis__description h5 {
+        font-size: 18px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .tyforvis__description p span {
+        margin: 3px 0;
+    }
 
 
 
+
+
+
+    .stepsection__header,
+    .meetslider-sect__header {
+        margin-bottom: 60px;
+    }
+
+    .whoweare h2,
+    .stepsection__header h2,
+    .meetslider-sect__header h2,
+    .tyforvis__description h3,
+    .tyforvis__description h5 {
+        margin-bottom: 16px;
+    }
+
+    .chesssect__text ol,
+    .chesssect__text p,
+    .chesssect__text ul {
+        margin-bottom: 15px;
+    }
+
+    // 21>18
+    .infpic .largetext p,
+    .largetext p,
+    .quoteblock p,
+    .meetslider-sect__header p {
+        font-size: 18px;
+    }
+
+    .meetslide p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .chesssect__text {
+        padding: 40px 60px 40px 60px;
+    }
+
+    .quoteblock {
+        padding: 50px;
+
+        p {
+            max-width: 550px;
+        }
+    }
+
+    .quoteblock:after,
+    .quoteblock:before {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .meetslider-sect__header,
+    .stepsection__header {
+        margin-bottom: 50px;
+    }
+
+    .tyforvis__description h3 {
+        margin-bottom: 5px;
+    }
+
+    .tyforvis__description h5 {
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .swiper-button-next.v1 {
+        right: -35px;
+    }
+
+    .swiper-button-prev.v1 {
+        left: -35px;
+    }
+
+    .hero-pages {
+        max-height: 600px;
+    }
+
+    .hero-pages .hero-pages__content {
+        padding-bottom: 100px;
+    }
+
+    .whoweare .col-xl-4 {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .chesssect__text {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .stepsection__box-left {
+        padding-top: 10px;
+
+        ul li {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 4px;
+        }
+    }
+
+    .stepsection__box {
+        align-items: flex-start;
+    }
+
+    .meetslide .imgwrap img {
+        max-width: 240px;
+    }
+
+    .tyforvis .imgwrapper {
+        height: 230px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+
+
+    .chesssect__text h2,
+    .infosection1 h2,
+    .infosection1 h2:last-child {
+        margin-bottom: 16px;
+    }
+
+    .infpic .largetext p {
+        font-size: 16px;
+    }
+
+    .stepsection__header p {
+        font-size: 18px;
+    }
+
+    .meetslider-sect__header,
+    .stepsection__header {
+        margin-bottom: 40px;
+    }
+
+    .whoweare,
+    .infosection1,
+    .stepsection,
+    .meetslider-sect,
+    .tyforvis {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+    .infpic.not-reverse {
+        .col-md-6:first-child {
+            order: 1;
+        }
+
+        .col-md-6:nth-child(2) {
+            order: 2;
+        }
+    }
+
+    .chesssect {
+        .spaceleft {
+            padding-left: 0 !important;
+        }
+
+        .row:nth-child(even) {
+            .col-md-6 {
+                &:nth-child(1) {
+                    order: 2;
+                }
+
+                &:nth-child(2) {
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    .chesssect__text {
+        padding: 30px;
+    }
+
+    .chesssect__img {
+        min-height: initial;
+
+        img {
+            position: relative;
+            height: auto;
+            object-position: initial;
+        }
+    }
+
+    .quoteblock:after,
+    .quoteblock:before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .quoteblock {
+        padding: 50px 60px;
+
+        P {
+            font-size: 16px;
+        }
+    }
+
+    .stepsection__box-left,
+    .stepsection__box-right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .stepsection__box-left {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .stepsection__box {
+        padding: 20px;
+    }
+
+    .stepsection__box-left p {
+        margin-bottom: 10px;
+    }
+
+    .stepsection__box:nth-child(2n) .stepsection__box-left {
+        padding-left: 0;
+    }
+
+    .stepsection__box-left h5 {
+        font-size: 17px;
+    }
+
+    .meetslide .imgwrap img {
+        max-width: 200px;
+    }
+
+    .swiper-button-next.v1 {
+        right: -30px;
+    }
+
+    .swiper-button-prev.v1 {
+        left: -30px;
+    }
+
+    .meetslide .imgwrap {
+        margin-bottom: 15px;
+    }
+
+    .tyforvis__description {
+        margin-bottom: 20px;
+    }
+
+    .tyforvis .imgwrapper {
+        height: auto;
+    }
+
+    .swiper-button-next.v1,
+    .swiper-button-prev.v1 {
+        top: 100px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .meetslider-wrapper {
+        padding: 0 30px;
+    }
+
+    .swiper-button-next.v1 {
+        right: -10px;
+    }
+
+    .swiper-button-prev.v1 {
+        left: -10px;
+    }
+
+    .meetslide {
+        text-align: center;
+    }
+
+    .hero-pages {
+        height: calc(100vh - 70px);
+        max-height: initial;
+        min-height: 500px;
+    }
+
+    .hero-pages .hero-pages__content {
+        padding-bottom: 70px;
+    }
+
+    .whoweare__boxes {
+        margin: 30px 0;
+        margin-right: calc(var(--bs-gutter-x)* -.5);
+        margin-left: calc(var(--bs-gutter-x)* -.5);
+    }
+
+    .chesssect__text {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .infosection1 .imgwrap {
+        height: 160px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .quoteblock:after, .quoteblock:before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .quoteblock {
+        padding: 30px 40px;
+    }
+
+    .stepsection__box-right .imgwrap {
+        height: auto;
+    }
+
+    .infosection1,
+    .meetslider-sect,
+    .stepsection,
+    .tyforvis,
+    .whoweare {
+        padding: 60px 0;
+    }
+
+    .largetext p,
+    .stepsection__header p,
+    .meetslider-sect__header p {
+        font-size: 16px;
+    }
+
+    .meetslider-sect__header, .stepsection__header {
+        margin-bottom: 30px;
+    }
+
+}
 
 @media(min-width:1601px) {
     .chesssect__text {

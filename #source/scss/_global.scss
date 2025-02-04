@@ -7,6 +7,7 @@
 body {
     font-family: 'DegularText';
     font-size: 16px;
+    line-height: 140%;
 
     &.hidden {
         overflow: hidden;
@@ -141,6 +142,10 @@ img {
 
 .bg-babyblue {
     background: #C7E3F8;
+}
+
+.bg-mainblue {
+    background: #0E4271;
 }
 
 @media(max-width:1599.8px) {
