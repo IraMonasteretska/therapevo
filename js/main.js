@@ -148,8 +148,41 @@ $(document).ready(function () {
         },
     });
 
+    // select 2
+    if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "",
+            minimumResultsForSearch: Infinity,
+        });
+    }
 
+    // meet your therapist
+    var swiper2 = new Swiper(".meettherapistsl", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
 
-
+            1200: {
+                slidesPerView: 2,
+            },
+        },
+    });
 
 })

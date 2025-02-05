@@ -395,7 +395,1561 @@
             }
         }
 
-        
+
     }
 }
 
+.benefitssect {
+    padding: 100px 0;
+
+    h3 {
+        color: #0E4271;
+        margin-bottom: 77px;
+    }
+}
+
+.border-col {
+    .col-lg-4 {
+        border-right: 1px solid #8D99AF;
+        border-bottom: 1px solid #8D99AF;
+
+        &:nth-child(3n) {
+            border-right: none;
+        }
+
+        &:nth-child(n+4) {
+            border-bottom: none;
+        }
+
+        .beninf {
+            height: 100%;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                max-width: 300px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 21px;
+                line-height: 130%;
+                font-weight: 500;
+                color: #0E4271;
+            }
+        }
+    }
+}
+
+.wrappercontent {
+    padding: 120px 0;
+}
+
+.infobnr.mb0 {
+    margin-bottom: 0;
+}
+
+.infobnr .infobnr__info p {
+    padding-right: 20px;
+
+    a {
+        text-decoration: underline;
+        color: #fff;
+        text-underline-offset: 4px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.infosection2 {
+    padding: 120px 0;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .imgwrap {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 10px;
+        }
+    }
+
+    h2 {
+        color: #0E4271;
+        margin-bottom: 28px;
+    }
+
+    h4 {
+        margin-bottom: 28px;
+        color: #262626;
+    }
+
+    p {
+        color: #0E4271;
+        line-height: 140%;
+        margin-bottom: 28px;
+    }
+}
+
+.iconwhiteblock {
+    padding: 40px 30px;
+    background: #fff;
+    border: 1px solid #0E4271;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .icon {
+        width: 100%;
+        max-width: 48px;
+        flex: 0 0 48px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .rightblock {
+        width: 100%;
+        max-width: calc(100% - 48px);
+        flex: 0 0 calc(100% - 48px);
+        padding-left: 32px;
+
+        p {
+            line-height: 140%;
+            color: #262626;
+
+            a {
+                color: #0E4271;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.qapage {
+    padding: 100px 0 20px;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        color: #0E4271;
+        margin-bottom: 80px;
+    }
+
+    .linetitle {
+        display: inline-block;
+        padding: 30px 0;
+        border-top: 1px solid #0E4271;
+        border-bottom: 1px solid #0E4271;
+    }
+
+    .imgwrap {
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .descrwrap {
+        padding-left: 128px;
+        margin: 80px 0;
+        position: relative;
+
+        .num {
+            color: #F3776D;
+            font-size: 128px;
+            font-family: 'DegularDisplay';
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 70%;
+            margin: -10px 0 0 0;
+        }
+
+        h4 {
+            color: #262626;
+            padding-bottom: 28px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #0E4271;
+        }
+
+        p {
+            margin: 0;
+            line-height: 145%;
+            font-weight: 500;
+            color: #0E4271;
+        }
+
+        &.blue {
+            background: #0E4271;
+            border-radius: 0 10px 10px 0;
+            padding: 100px 75px 30px;
+            min-height: 456px;
+
+            .num {
+                top: -40px;
+                margin: 0;
+                left: 53px;
+                color: #F3776D;
+            }
+
+            h4 {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+
+    .abslem1 {
+        position: absolute;
+        bottom: 138px;
+        right: 0;
+        width: 35%;
+    }
+
+    .abslem2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+    }
+
+
+
+}
+
+.meetyourtherapist {
+    padding: 130px 0 90px;
+
+    .meetyourtherapist__header {
+        margin-bottom: 28px;
+
+        h2 {
+            color: #0E4271;
+            margin-bottom: 28px;
+        }
+
+        p {
+            color: #0E4271;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+            max-width: 1006px;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.filtertherapist {
+    padding: 35px 20px 20px 20px;
+    border-radius: 10px;
+    background: #E2F0F9;
+
+    .filterbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+
+        .title {
+            font-size: 21px;
+            line-height: 130%;
+            font-weight: 500;
+            color: #0E4271;
+            margin-bottom: 8px;
+        }
+
+        .searchbox {
+            position: relative;
+
+            span {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 11px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            input {
+                background: #fff;
+                width: 100%;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                padding-left: 11px;
+                padding-right: 35px;
+                font-size: 16px;
+                font-family: 'DegularText';
+                color: #0E4271;
+                height: 47px;
+
+                &::placeholder {
+                    color: #8D99AF;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+.filtertherapist__bottom {
+    margin-top: 23px;
+
+    .reset {
+        svg {
+            width: 24px;
+            transform: none !important;
+            margin-top: -1px;
+            margin-left: 8px;
+
+            path {
+                stroke: none;
+            }
+        }
+
+        &:hover {
+            svg path {
+                fill: #fff;
+            }
+        }
+    }
+
+    .filtertherapist__bottblock {
+        display: flex;
+        flex-wrap: wrap;
+
+        button {
+            width: 100%;
+            max-width: 240px;
+            flex: 0 0 240px;
+            border: none;
+        }
+
+        p {
+            width: 100%;
+            max-width: calc(100% - 240px);
+            flex: 0 0 calc(100% - 240px);
+            margin: 0;
+            padding-right: 40px;
+            color: #0E4271;
+            font-size: 14px;
+            line-height: 140%;
+            font-weight: 500;
+        }
+    }
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 47px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 11px;
+    color: #0E4271;
+    font-size: 16px;
+    line-height: 47px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 24px;
+    height: 24px;
+    background: url('../img/general/select-arrow.svg') no-repeat center / 100%;
+    height: 47px;
+    top: 0;
+    right: 11px;
+    transition: 0.3s;
+
+    b {
+        display: none;
+    }
+}
+
+.select2.select2-container--open {
+    .select2-selection--single .select2-selection__arrow {
+        transform: rotate(-180deg);
+    }
+}
+
+.select2-results__option--selectable {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: #0E4271;
+}
+
+.select2-dropdown {
+    margin-top: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+
+.meettherapist__sliderwrapper {
+    margin-top: 28px;
+
+    .bottomslider-nav {
+        margin-top: 28px;
+    }
+}
+
+.meettherapist {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 28px;
+
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .imgwrap {
+        width: 100%;
+        max-width: 35%;
+        flex: 0 0 35%;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .description {
+        width: 100%;
+        max-width: 65%;
+        flex: 0 0 65%;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+            color: #0E4271;
+            margin-bottom: 12px;
+            font-size: 21px;
+            line-height: 130%;
+            font-weight: 500;
+
+            span {
+                display: block;
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 140%;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #8D99AF;
+            }
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #262626;
+            line-height: 140%;
+            font-weight: 500;
+        }
+
+        .tags {
+
+            a {
+                color: #0E4271;
+                font-size: 14px;
+                line-height: 140%;
+                font-weight: 500;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background: #0E4271;
+                    width: 2px;
+                    height: 2px;
+                    vertical-align: middle;
+                    margin-top: -1px;
+                    margin-left: 4px;
+                    margin-right: 1px;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        .arrlink {
+            text-transform: uppercase;
+            color: #0E4271;
+            font-size: 14px;
+            line-height: 110%;
+            margin-right: 12px;
+
+            span {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    background: #0E4271;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    transition: 0.3s;
+                }
+            }
+
+            img {
+                vertical-align: middle;
+                margin-top: -3px;
+            }
+
+            &:hover {
+                span {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .bluebtn {
+            border: 1px solid transparent;
+
+            &:hover {
+                border: 1px solid #0E4271;
+            }
+        }
+    }
+
+}
+
+.bnrsect {
+    background: #0E4271;
+    border-radius: 10px;
+    border-radius: 10px;
+    padding: 75px 180px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+
+    h3 {
+        color: #fff;
+        margin: 0;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.blog-podcast {
+    padding: 100px 0 110px;
+}
+
+.blog-podcast__header {
+    margin-bottom: 54px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 28px;
+        color: #0E4271;
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 1006px;
+        color: #0E4271;
+        font-size: 21px;
+        line-height: 130%;
+        font-weight: 500;
+    }
+}
+
+.blog-podcast__body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1044px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.blog-podcast__left {
+    width: 100%;
+    max-width: calc(43% - 12px);
+    flex: 0 0 calc(43% - 12px);
+
+    .bp-big {
+        border-radius: 10px;
+        background: #fff;
+        padding: 20px;
+        min-height: 515px;
+
+        .imgwrap {
+            height: 292px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+
+        .description {
+            padding-top: 20px;
+
+            h4 {
+                color: #0E4271;
+                margin-bottom: 8px;
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 130%;
+            }
+
+            p {
+                color: #000;
+                line-height: 140%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.blog-podcast__right {
+    width: 100%;
+    max-width: calc(57% - 12px);
+    flex: 0 0 calc(57% - 12px);
+
+    .bp-small {
+        padding: 12px;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        min-height: 160px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .imgwrap {
+            width: 100%;
+            max-width: 36%;
+            flex: 0 0 36%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .description {
+            width: 100%;
+            max-width: 64%;
+            flex: 0 0 64%;
+            padding-left: 30px;
+
+            h6 {
+                color: #0E4271;
+                margin-bottom: 8px;
+                font-size: 16px;
+                line-height: 140%;
+                font-weight: 500;
+            }
+
+            p {
+                margin: 0;
+                color: #262626;
+                font-size: 14px;
+                line-height: 140%;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.faqsection-wrap {
+    padding: 80px 0 60px;
+}
+
+.importantinfo {
+    padding: 50px 0;
+
+}
+
+.importantinfo__left {
+    border-right: 1px solid #0E4271;
+    height: 100%;
+
+    p {
+        color: #0E4271;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    a {
+        color: #0E4271;
+        font-size: 29px;
+        line-height: 116%;
+        font-weight: 500;
+
+        span {
+            color: #F3776D;
+        }
+    }
+}
+
+.importantinfo__right {
+    ul {
+        margin: 0 0 20px 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 14px;
+            color: #0E4271;
+            font-size: 16px;
+            line-height: 140%;
+            font-weight: 500;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.meettherapist {
+    min-height: 285px;
+}
+
+.importantinfo__left {
+    padding-right: 10px;
+}
+
+
+@media(max-width:1599.8px) {
+
+    .hero-pages.herov2 .hero-pages__content {
+        padding-bottom: 120px;
+    }
+
+    .contboxwrap {
+        max-width: calc(33.333% - 20px);
+        flex: 0 0 calc(33.333% - 20px);
+    }
+
+    .contboxwrap .contbox .num {
+        font-size: 80px;
+    }
+
+    .divorce__whitesect .divorcewhbox p span {
+        font-size: 44px;
+        margin: 15px 0;
+    }
+
+    .benefits__right ul li {
+        margin-bottom: 25px;
+    }
+
+    .border-col .col-lg-4 .beninf {
+        min-height: 200px;
+    }
+
+    .wrappercontent,
+    .meetyourtherapist,
+    .blog-podcast {
+        padding: 100px 0;
+    }
+
+    .halfbg:after {
+        width: 73%;
+    }
+
+    .qapage .descrwrap.blue .num,
+    .qapage .descrwrap .num {
+        font-size: 100px;
+    }
+
+    .qapage .descrwrap.blue {
+        padding-top: 70px;
+        min-height: 380px;
+    }
+
+    .filtertherapist__bottom .filtertherapist__bottblock p {
+        padding-right: 15px;
+    }
+
+    .meettherapist .description p {
+        margin-bottom: 8px;
+    }
+
+    .meettherapist .description .bottom {
+        padding-top: 5px;
+    }
+
+    .meettherapist {
+        min-height: 290px;
+    }
+
+
+    .divorce h3 {
+        margin-bottom: 40px;
+    }
+
+    .contboxwrap .contbox h4 {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .countssection .contboxes {
+        margin-top: 60px;
+    }
+
+    .contboxwrap .contbox .num {
+        font-size: 60px;
+        margin-bottom: 8px;
+    }
+
+    .contboxwrap .contbox h4 {
+        margin-bottom: 8px;
+    }
+
+    .divorce__whitesect .divorcewhbox p span {
+        margin: 10px 0;
+    }
+
+    .divorce .colblock {
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    .divorce__bluesect {
+        padding: 40px 80px;
+    }
+
+    .border-col .col-lg-4 .beninf {
+        padding: 0 10px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .border-col .col-lg-4 .beninf {
+        min-height: 180px;
+    }
+
+    .infobnr {
+        align-items: flex-start;
+    }
+
+    .infobnr .infobnr__info p {
+        margin-bottom: 30px;
+    }
+
+    .qapage .descrwrap.blue {
+        margin: 30px 0 0 0;
+        padding-top: 50px;
+    }
+
+    .qapage .descrwrap h4 {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .meettherapist .description .name {
+        margin-bottom: 8px;
+    }
+
+    .meettherapist .description .bluebtn {
+        margin-top: 8px;
+    }
+
+    .meettherapist .description .tags {
+        line-height: 100%;
+    }
+
+    .meettherapist {
+        min-height: 320px;
+    }
+
+    .importantinfo__left a {
+        font-size: 24px;
+    }
+
+    .importantinfo__right ul li {
+        margin-bottom: 8px;
+    }
+
+    .countssection,
+    .infosection2 {
+        padding: 100px 0;
+    }
+
+
+
+    .benefits__left h2,
+    .whatwehelpwith__header,
+    .benefitssect h3,
+    .qapage h2 {
+        margin-bottom: 60px;
+    }
+
+    .benefits__left h2 {
+        margin-bottom: 40px;
+    }
+
+    .meettherapist .description p {
+        font-size: 14px;
+    }
+
+    .meetyourtherapist .meetyourtherapist__header h2,
+    .infosection2 h2,
+    .infosection2 h4,
+    .infosection2 p,
+    .whatwehelpwith__header h2,
+    .chesssect__text h2,
+    .infpic h2,
+    .blog-podcast__header h2 {
+        margin-bottom: 16px;
+    }
+
+    .divorce__whitesect .divorcewhbox p,
+    .infobnr .infobnr__info p,
+    .meetyourtherapist .meetyourtherapist__header p,
+    .infosection2 h4,
+    .whatwehelpwith__header p,
+    .blog-podcast__header p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .countssection .descr {
+        padding-left: 0;
+    }
+
+    .countssection .contboxes {
+        margin-top: 40px;
+    }
+
+    .divorce__bluesect {
+        padding: 30px 40px;
+    }
+
+    .benefits__left h2 {
+        margin-bottom: 20px;
+    }
+
+    .qapage .linetitle {
+        padding: 20px 0;
+    }
+
+    .qapage .descrwrap {
+        margin: 60px 0;
+    }
+
+    .meettherapist .description .name {
+        font-size: 24px;
+    }
+
+    .meettherapist .description .name span,
+    .meettherapist .description p,
+    .meettherapist .description .tags a {
+        font-size: 16px;
+    }
+
+    .meettherapist {
+        min-height: inherit;
+    }
+
+    .bnrsect h3 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .bnrsect {
+        padding: 50px 70px;
+    }
+
+    .blog-podcast__left .bp-big .imgwrap {
+        height: 270px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .benefits__left h2,
+    .benefitssect h3,
+    .qapage h2,
+    .whatwehelpwith__header,
+    .blog-podcast__header {
+        margin-bottom: 50px;
+    }
+
+    .divorce__whitesect .divorcewhbox p {
+        font-size: 16px;
+    }
+
+    .divorce__whitesect .divorcewhbox p span {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .contboxwrap {
+        max-width: calc(33.333% - 10px);
+        flex: 0 0 calc(33.333% - 10px);
+    }
+
+    .contboxwrap .contbox {
+        padding: 10px;
+    }
+
+    .infpic .imgswrap.imgswrap__leftbottom {
+        text-align: right;
+    }
+
+    .divorce h3 {
+        margin-bottom: 30px;
+    }
+
+    .divorce__whitesect .divorcewhbox {
+        max-width: 33.333% !important;
+        flex: 0 0 33.333% !important;
+        padding: 0 15px;
+    }
+
+    .divorce__whitesect .divorcewhbox p span {
+        font-size: 28px;
+        margin: 7px 0;
+    }
+
+    .divorce__bluesect {
+        max-width: calc(100% - 50px);
+        margin: -40px auto 0;
+    }
+
+    .benefits__left h2 {
+        br {
+            display: none;
+        }
+    }
+
+    .benefits__left img {
+        display: none;
+    }
+
+    .whatwehelpwith__box {
+        padding: 40px 15px 40px 15px;
+        width: calc(50% - 10px);
+    }
+
+    .whatwehelpwith__box h4,
+    .whatwehelpwith__box ul li {
+        margin-bottom: 20px;
+    }
+
+    .border-col .col-lg-4,
+    .border-col .col-lg-4:nth-child(3n),
+    .border-col .col-lg-4:nth-child(n+4) {
+        border-right: 1px solid #8D99AF;
+        border-bottom: 1px solid #8D99AF;
+    }
+
+    .border-col .col-lg-4:nth-child(2n) {
+        border-right: none;
+    }
+
+    .border-col .col-lg-4:nth-child(n+5) {
+        border-bottom: none;
+    }
+
+    .border-col .col-lg-4 .beninf {
+        min-height: 150px;
+    }
+
+    .infosection2 .imgwrap {
+        height: auto;
+    }
+
+    .halfbg:after {
+        display: none;
+    }
+
+    .infosection2 {
+        .descrwrap {
+            margin-bottom: 30px;
+        }
+    }
+
+    .qapage {
+        padding: 80px 0 10px;
+    }
+
+    .qapage .imgwrap img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .qapage .descrwrap.blue {
+        margin-top: 0;
+    }
+
+    .qapage .descrwrap.blue .num {
+        position: relative;
+        margin-top: 0;
+        left: 0;
+        top: 0;
+        font-size: 50px;
+        line-height: 110%;
+    }
+
+    .qapage .descrwrap .num {
+        font-size: 50px;
+        line-height: 110%;
+    }
+
+    .qapage .descrwrap {
+        padding-left: 60px;
+    }
+
+    .qapage .descrwrap.blue {
+        min-height: inherit;
+        padding: 20px 30px 30px 30px;
+    }
+
+    .qapage {
+        .imgwrap {
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+
+    .qapage .abslem1 {
+        bottom: 30%;
+    }
+
+    .filtertherapist .filterbox {
+        margin-bottom: 20px;
+    }
+
+    .filtertherapist {
+        padding-top: 15px;
+    }
+
+    .filtertherapist__bottom .transparentbtn {
+        margin-bottom: 20px;
+    }
+
+    .bnrsect img {
+        opacity: 0.7;
+    }
+
+    .blog-podcast__left,
+    .blog-podcast__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .blog-podcast__left .bp-big {
+        min-height: inherit;
+    }
+
+    .blog-podcast__left {
+        margin-bottom: 20px;
+    }
+
+    .blog-podcast__left .bp-big .imgwrap {
+        height: auto;
+    }
+
+    .blog-podcast__right .bp-small .description h6 {
+        font-size: 21px;
+    }
+
+    .importantinfo__left {
+        border: none;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+    .benefits__left h2,
+    .benefitssect h3,
+    .blog-podcast__header,
+    .qapage h2,
+    .whatwehelpwith__header {
+        margin-bottom: 40px;
+    }
+
+    .countssection,
+    .infosection2,
+    .divorce,
+    .benefits,
+    .whatwehelpwith,
+    .benefitssect,
+    .blog-podcast,
+    .meetyourtherapist,
+    .wrappercontent {
+        padding: 80px 0;
+    }
+
+    .contboxwrap .contbox p {
+        font-size: 14px;
+    }
+
+    .infobnr .infobnr__info p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .hero-pages.herov2 .hero-pages__content {
+        padding-bottom: 60px;
+    }
+
+    .hero-pages.herov2 h4,
+    .hero-pages.herov2 h1 {
+        margin-bottom: 15px;
+    }
+
+    .contboxwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .countssection .contboxes {
+        margin-top: 30px;
+    }
+
+    .divorce__whitesect .divorcewhbox {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        border-bottom: 1px solid rgba(141, 153, 175, 0.2);
+        margin-bottom: 20px;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .divorce__whitesect {
+        .col-lg-10.d-flex {
+            flex-wrap: wrap;
+        }
+    }
+
+    .divorce__whitesect {
+        padding: 20px 0 40px;
+    }
+
+    .divorce .colblock {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .divorce__bluesect {
+        flex-wrap: wrap;
+    }
+
+    .qapage .imgwrap {
+        display: none;
+    }
+
+    .qapage .descrwrap.blue {
+        border-radius: 10px;
+    }
+
+    .filtertherapist .filterbox .searchbox {
+        padding-top: 20px;
+    }
+
+    .filtertherapist__bottom .filtertherapist__bottblock p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        order: 2;
+    }
+
+    .filtertherapist__bottom .filtertherapist__bottblock button {
+        max-width: 100%;
+        flex: 0 0 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .bnrsect {
+        padding: 30px 30px;
+    }
+
+
+
+
+
+
+
+
+
+    .countssection h2 {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .hero-pages.herov2 .hero-pages__content {
+        padding-bottom: 40px;
+    }
+
+    .hero-pages.herov2 h1,
+    .hero-pages.herov2 h4 {
+        margin-bottom: 10px;
+    }
+
+    .divorce .colblock img {
+        height: 40px;
+    }
+
+
+    .divorce__bluesect {
+        padding: 20px;
+    }
+
+    .whatwehelpwith__boxes {
+        flex-wrap: wrap;
+    }
+
+    .whatwehelpwith__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .whatwehelpwith__box>img {
+        margin-bottom: 20px;
+    }
+
+
+    .border-col .col-lg-4 {
+        border-right: none !important;
+        border-bottom: 1px solid #8D99AF !important;
+
+        &:last-child {
+            border-bottom: none !important;
+        }
+    }
+
+    .border-col .col-lg-4 .beninf {
+        min-height: inherit;
+        padding: 20px 0;
+    }
+
+    .border-col .col-lg-4 .beninf p {
+        font-size: 16px;
+    }
+
+    .infobnr .infobnr__info p,
+    .infobnr .infobnr__info {
+        padding-right: 0;
+    }
+
+    .iconwhiteblock {
+        padding: 20px;
+    }
+
+    .iconwhiteblock .rightblock {
+        padding-left: 15px;
+    }
+
+    .infosection2.halfbg {
+        padding-bottom: 20px;
+    }
+
+    .blog-podcast__header p,
+    .divorce__whitesect .divorcewhbox p,
+    .infobnr .infobnr__info p,
+    .infosection2 h4,
+    .meetyourtherapist .meetyourtherapist__header p,
+    .whatwehelpwith__header p {
+        font-size: 16px;
+    }
+
+    .filtertherapist .filterbox {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+
+    .meettherapist .imgwrap,
+    .meettherapist .description {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .meettherapist .description {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .meettherapist .description .bottom {
+        padding-top: 15px;
+    }
+
+    .bnrsect h3 {
+        font-size: 21px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .blog-podcast__right .bp-small .imgwrap,
+    .blog-podcast__right .bp-small .description {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .blog-podcast__left .bp-big {
+        padding: 12px;
+    }
+
+    .blog-podcast__right .bp-small .description {
+        padding: 20px 0 0 0;
+    }
+
+    .blog-podcast__right .bp-small .description p {
+        font-size: 16px;
+    }
+
+    .blog-podcast__right .bp-small .description h6 {
+        line-height: 130%;
+    }
+
+
+
+
+    
+
+
+
+
+    .benefits__left h2,
+    .benefitssect h3,
+    .blog-podcast__header,
+    .qapage h2,
+    .whatwehelpwith__header {
+        margin-bottom: 30px;
+    }
+
+    .benefits,
+    .benefitssect,
+    .blog-podcast,
+    .countssection,
+    .divorce,
+    .infosection2,
+    .meetyourtherapist,
+    .whatwehelpwith,
+    .wrappercontent {
+        padding: 60px 0;
+    }
+}
