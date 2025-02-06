@@ -61,6 +61,14 @@ h4 {
     min-height: 48px;
     text-align: center;
 
+    &.bluebtn__border {
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: #0E4271;
+        }
+    }
+
     svg {
         vertical-align: middle;
         margin-top: -4px;
@@ -268,3 +276,48 @@ img {
         min-height: 42px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .imgswrap.imgswrap__pic3
+// imgswrap imgswrap__center
+// imgswrap imgswrap__leftbottom
+
+
+// infosection2
+// infosection3
+
+// infosect-prsright (main trauma)
