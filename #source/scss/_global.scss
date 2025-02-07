@@ -301,6 +301,41 @@ img {
 
 
 
+// --------------------
+.infpic .imgswrap__rightbottom {
+    padding-bottom: 55px;
+
+    .mainimg {
+        max-width: 385px;
+
+    }
+
+    .subimg {
+        max-width: 385px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .infpic .imgswrap__rightbottom.imgswrap .subimg {
+        max-width: 70%;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .infpic .imgswrap__rightbottom.imgswrap .subimg  {
+        max-width: 70%;
+    }
+}
+
+
+
+
+
+
+
 
 
 
