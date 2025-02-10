@@ -145,7 +145,7 @@ img {
 }
 
 .bg-lightblue {
-    background: #E2F0F9;
+    background: #E2F0F9 !important;
 }
 
 .bg-babyblue {
@@ -153,7 +153,11 @@ img {
 }
 
 .bg-mainblue {
-    background: #0E4271;
+    background: #0E4271 !important;
+}
+
+.bg-grey {
+    background: rgba(#8D99AF, 0.2);
 }
 
 .halfbg {
