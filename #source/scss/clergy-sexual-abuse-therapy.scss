@@ -1,0 +1,182 @@
+.infpic__leftext {
+    max-width: 384px;
+}
+
+.infpic {
+    .row {
+        &:not(:first-child) {
+            margin-top: 88px;
+        }
+    }
+
+    .infpic__leftext {
+
+        h5 {
+            margin-bottom: 28px;
+            color: #0E4271;
+            font-size: 21px;
+            line-height: 130%;
+            font-weight: 500;
+        }
+
+        p,
+        ul {
+            font-size: 16px;
+            line-height: 140%;
+            color: #0E4271;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.mightnotice {
+    overflow: initial;
+}
+
+.bird-el {
+    position: absolute;
+    right: 27px;
+    top: -100px;
+    max-width: 249px;
+}
+
+.faqrow__body p {
+    max-width: 700px;
+}
+
+.rdytosbegin {
+    padding: 78px 0 72px;
+
+    .imgwrap {
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .descr-wrap {
+        text-align: left;
+
+        h2 {
+            color: #0E4271;
+        }
+
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+            color: #0E4271;
+        }
+    }
+
+}
+
+@media(max-width:1599.8px) {
+
+    .hero-pages.herov2-2 .hero-pages__content h4 {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .bird-el {
+        max-width: 180px;
+    }
+
+    .rdytosbegin .descr-wrap p {
+        font-size: 18px;
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .mightnotice {
+        overflow: hidden;
+    }
+
+    .bird-el {
+        display: none;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .meetyourtherapist .meetyourtherapist__header p br {
+        display: none;
+    }
+
+    .infpic .infpic__leftext ul li {
+        margin-bottom: 10px;
+    }
+
+    .infpic .infpic__leftext h5,
+    .rdytosbegin .descr-wrap h2 {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .infpic .row:not(:first-child) {
+        margin-top: 40px;
+    }
+
+    .infpic__leftext {
+        max-width: 100%;
+    }
+
+    .infpic .rightpic {
+        .col-xl-4 {
+            &:nth-child(1) {
+                order: 1;
+            }
+
+            &:nth-child(2) {
+                order: 2;
+            }
+        }
+    }
+
+    .rdytosbegin .imgwrap {
+        margin-top: 16px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .textblock.p80 {
+        padding: 40px 0;
+    }
+
+    .textblock h3 {
+        margin-bottom: 0;
+    }
+
+    br {
+        display: none;
+    }
+
+    .rdytosbegin {
+        padding: 60px 0;
+    }
+
+
+
+
+
+    .rdytosbegin .descr-wrap p {
+        font-size: 18px;
+    }
+}

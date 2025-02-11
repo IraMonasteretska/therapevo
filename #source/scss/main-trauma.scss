@@ -15,7 +15,7 @@
 }
 
 .textblock {
-    padding: 110px 0;
+    padding: 80px 0;
     background: #0E4271;
 
     &.padmd {
@@ -24,6 +24,7 @@
 
     h3 {
         color: #fff;
+        margin-bottom: 28px;
 
         &:last-child {
             margin-bottom: 0;
@@ -54,7 +55,7 @@
     }
 }
 
-.imgswrap.imgswrap__pic3 {
+.imgswrap.v3 {
     text-align: center;
     height: 550px;
 
@@ -673,10 +674,6 @@
         padding: 100px 0;
     }
 
-    .textblock {
-        padding: 90px 0;
-    }
-
     .horsteps__header .descrwrap p,
     .infosection3 .infrghblock blockquote {
         font-size: 18px;
@@ -770,7 +767,7 @@
 }
 
 @media(max-width:1199.8px) {
-    .imgswrap.imgswrap__pic3 {
+    .imgswrap.v3 {
         height: 450px;
     }
 
@@ -778,7 +775,7 @@
         max-width: 50%;
     }
 
-    .imgswrap.imgswrap__pic3 .subimg-litt {
+    .imgswrap.v3 .subimg-litt {
         max-width: 30%;
     }
 
@@ -833,16 +830,16 @@
 }
 
 @media(max-width:991.8px) {
-    .imgswrap.imgswrap__pic3 {
+    .imgswrap.v3 {
         height: inherit;
         padding-bottom: 130px;
     }
 
-    .imgswrap.imgswrap__pic3 .mainimg {
+    .imgswrap.v3 .mainimg {
         max-width: calc(100% - 30px);
     }
 
-    .imgswrap.imgswrap__pic3 .subimg {
+    .imgswrap.v3 .subimg {
         border-radius: 10px;
     }
 
@@ -1038,7 +1035,10 @@
         font-size: 16px;
     }
 
-    .textblock h3,
+    .textblock h3 {
+        font-size: 21px;
+    }
+    
     .mightnotice__head h4,
     .mightnotice__body .subtitle {
         font-size: 18px;

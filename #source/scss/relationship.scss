@@ -87,7 +87,7 @@
         position: absolute;
     }
 
-    &.imgswrap__leftbottom {
+    &.v2 {
         text-align: center;
 
         .subimg {
@@ -1391,6 +1391,14 @@
     }
 }
 
+.infpic ul.marginli0 li {
+    margin-bottom: 0px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 @media(max-width:1199.8px) {
     .countssection .descr {
         padding-left: 0;
@@ -1480,7 +1488,7 @@
         padding: 10px;
     }
 
-    .infpic .imgswrap.imgswrap__leftbottom {
+    .infpic .imgswrap.v2 {
         text-align: right;
     }
 

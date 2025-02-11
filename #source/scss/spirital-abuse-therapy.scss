@@ -1,0 +1,124 @@
+.textblock.bg-babyblue {
+    h3 {
+        color: #0E4271;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.infpic {
+    p {
+        color: #0E4271;
+        margin-bottom: 28px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 0 28px 0;
+        padding: 0;
+        color: #0E4271;
+
+        li {
+            margin-bottom: 28px;
+            font-weight: 400;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            b {
+                display: block;
+                font-weight: 500;
+            }
+        }
+
+
+    }
+}
+
+.mightnotice.bg-mainblue {
+
+    h3,
+    h4,
+    .mightnotice__body .subtitle {
+        color: #fff;
+    }
+}
+
+.horsteps.bg-babyblue {
+    .horsteps__box .num {
+        background: #0E4271;
+        color: #fff;
+    }
+}
+
+.textblock.bg-lightblue {
+    h3 {
+        color: #0E4271;
+    }
+}
+
+.rdytosbegin {
+
+    h2,
+    p {
+        margin-bottom: 28px;
+    }
+}
+
+.rdytosbegin.bg-mainblue {
+    .descr-wrap {
+
+        h2,
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.textblock .bluebtn {
+    margin-top: 0;
+}
+
+@media(max-width:1599.8px) {
+    .textblock p br {
+        display: none;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .textblock p {
+        font-size: 18px;
+    }
+
+    .infpic p,
+    .infpic .infpic__leftext h5,
+    .textblock.bg-babyblue h3,
+    .textblock p,
+    .textblock.bg-babyblue p,
+    .textblock h3,
+    .rdytosbegin h2,
+    .rdytosbegin p,
+    .infpic ul li,
+    .infpic ul {
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .textblock p {
+        font-size: 18px;
+    }
+}

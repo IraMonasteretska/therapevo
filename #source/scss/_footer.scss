@@ -236,6 +236,10 @@ footer.footer {
 
 }
 
+.footer__topsect .footerbox ul li a.title:after {
+    display: none;
+}
+
 @media(max-width:1599.8px) {
     .footer__topsect .footerbox .title {
         font-size: 20px;

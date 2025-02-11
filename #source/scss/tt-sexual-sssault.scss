@@ -75,10 +75,6 @@
         text-align: center;
         justify-content: center;
     }
-
-    h3+.whitebtn {
-        margin-top: 40px;
-    }
 }
 
 .countssection__bottomsect {
@@ -232,7 +228,7 @@
     }
 }
 
-@media(max-width:576.8px) {
+@media(max-width:575.8px) {
     .textblock p {
         font-size: 18px;
     }

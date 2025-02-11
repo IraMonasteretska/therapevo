@@ -149,7 +149,7 @@ img {
 }
 
 .bg-babyblue {
-    background: #C7E3F8;
+    background: #C7E3F8 !important;
 }
 
 .bg-mainblue {
@@ -306,18 +306,35 @@ img {
 
 
 // --------------------
-.infpic .imgswrap__rightbottom {
+// v1,v2,v3,v4, v5
+.infpic .v4 {
     padding-bottom: 55px;
 
     .mainimg {
         max-width: 385px;
-
     }
 
     .subimg {
         max-width: 385px;
         position: absolute;
         right: 0;
+        bottom: 0;
+    }
+}
+
+.infpic .imgswrap.v5 {
+    padding-bottom: 75px;
+
+    .mainimg {
+        z-index: 2;
+        position: relative;
+        max-width: 365px;
+    }
+
+    .subimg {
+        max-width: 365px;
+        position: absolute;
+        left: 0;
         bottom: 0;
     }
 }
@@ -334,7 +351,12 @@ img {
     }
 }
 
-
+@media(max-width:991.8px) {
+    .infpic .imgswrap.v5 .mainimg,
+    .infpic .imgswrap.v5 .subimg {
+        max-width: 80%;
+    }
+}
 
 
 

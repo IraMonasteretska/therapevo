@@ -24,7 +24,12 @@ $(document).ready(function () {
     });
 
     // header menu
+    $('.submenu-item>a').click(function (e) {
+        e.preventDefault();
+    })
+
     $('.submenu-item').click(function () {
+
         $('.submenu-item').not($(this)).removeClass('active');
         $('.submenu-item').not($(this)).find('.megamenu, .sublist').removeClass('show');
 
