@@ -1,0 +1,36 @@
+
+
+.infpic ul li b {
+    display: inline;
+}
+
+.mightnotice.bg-lightblue {
+    .mightnotice__box {
+        background: #C7E3F8;
+    }
+
+    .mightnotice__head .col-xl-10 {
+        border-color: #8D99AF;
+    }
+    
+}
+
+@media(max-width:1599.8px) {
+    .countssection {
+        padding: 100px 0;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .hero-pages.herov2-2 .hero-pages__content h1,
+    .hero-pages.herov2-2 .hero-pages__content h4 {
+       margin-bottom: 16px;
+    }
+}
+
+@media(max-width:575.8px)  {
+    .countssection {
+        padding: 60px 0;
+    }
+}
+

@@ -1,0 +1,117 @@
+.hero-pages.herov2-3 {
+
+    .hero-pages__content {
+        max-width: 622px;
+        padding-top: 94px;
+        margin-left: 8%;
+
+        h1 {
+            margin-bottom: 28px;
+            color: #0E4271;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h4 {
+            margin-bottom: 28px;
+            color: #0E4271;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.hero-pages {
+    min-height: 500px;
+}
+
+.rdysect1 {
+    padding: 90px 0 175px;
+    position: relative;
+
+    &>img {
+        max-height: 100px;
+    }
+
+    .secthead {
+        margin-bottom: 60px;
+        text-align: center;
+
+        .subtitle {
+            color: #0E4271;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: #0E4271;
+            margin-bottom: 28px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .rdytextblock {
+        border-radius: 10px;
+        min-height: 180px;
+        padding: 24px;
+        margin-bottom: 17px;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: underline;
+            color: #0E4271;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        p {
+            line-height: 140%;
+            color: #0E4271;
+
+            b {
+                font-weight: 500;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.bg-mainblue {
+            p {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .imgblock {
+        min-height: 365px;
+        margin-bottom: 17px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+}

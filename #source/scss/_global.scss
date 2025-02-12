@@ -213,6 +213,17 @@ img {
     }
 }
 
+.style-none {
+    list-style-type: none;
+    margin: 0;
+
+    li {
+        &::after {
+            display: none;
+        }
+    }
+}
+
 
 @media(max-width:1599.8px) {
     h1 {
@@ -382,3 +393,7 @@ img {
 // infosection3
 
 // infosect-prsright (main trauma)
+
+
+
+// rdysect1

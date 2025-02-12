@@ -1261,7 +1261,39 @@
 
 
 
+.consultation-modal {
+    .modal-dialog {
+        max-width: 1006px;
+    }
 
+    .modal-content {
+        padding: 40px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media(max-width:1024.8px) {
+    .consultation-modal {
+        .modal-dialog {
+            max-width: calc(100% - 30px);
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .consultation-modal {
+        .modal-dialog {
+            max-width: calc(100%);
+        }
+    }
+}
 
 // 0E4271
 

@@ -1,0 +1,55 @@
+.hero-pages.herov2-2 .hero-pages__content h4 {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.textblock {
+    h4 {
+        color: #0E4271;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.horsteps.bg-lightblue {
+    .horsteps__box .num {
+        color: #fff;
+        background: #0E4271;
+    }
+}
+
+.countssection__bgimg img {
+    object-position: 50% 0;
+}
+
+.countssection h4 {
+    color: #fff;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.countssection h2 {
+    margin-bottom: 28px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .countssection h2 {
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .textblock.bg-babyblue h3 br {
+        display: none;
+    }
+}
