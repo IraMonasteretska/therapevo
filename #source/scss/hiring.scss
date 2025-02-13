@@ -1,0 +1,131 @@
+.hirearrsect {
+    padding: 110px 0;
+}
+
+.hirearrsect {
+    h3 {
+        text-align: center;
+        color: #0E4271;
+        margin-bottom: 60px;
+    }
+}
+
+.hirearrwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hirearrbox1,
+.hirearrbox2,
+.hirearrbox3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+        color: #0E4271;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+}
+
+.hirearrbox2,
+.hirearrbox3 {
+    margin-left: -17px;
+}
+
+.hirearrbox1 {
+    width: 100%;
+    height: 197px;
+    background: url('../img/hiring/hirearr1.png') no-repeat center / 100% 100%;
+    max-width: 37%;
+    flex: 0 0 38%;
+    padding: 20px 90px 20px 44px;
+
+}
+
+.hirearrbox2 {
+    width: 100%;
+    height: 197px;
+    background: url('../img/hiring/hirearr2.png') no-repeat center / 100% 100%;
+    max-width: 37%;
+    flex: 0 0 38%;
+    padding: 20px 70px 20px 116px;
+}
+
+.hirearrbox3 {
+    width: 100%;
+    height: 197px;
+    background: url('../img/hiring/hirearr3.png') no-repeat center / 100% 100%;
+    max-width: 28%;
+    flex: 0 0 28%;
+    justify-content: center;
+
+    p {
+        color: #fff;
+        text-align: center;
+        max-width: 250px;
+    }
+}
+
+.infosection4 {
+    padding: 120px 0;
+    position: relative;
+
+    h2 {
+        color: #fff;
+        margin-bottom: 64px;
+    }
+
+    .wraptext {
+        padding: 50px 46px;
+        background: #C7E3F8;
+        border-radius: 10px;
+
+        p {
+            margin: 0;
+            color: #0E4271;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+        }
+    }
+
+    .colimg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 10px 0 0 10px;
+        top: 120px;
+        height: calc(100% - 240px);
+        max-width: calc(50% - 50px);
+    }
+}
+
+.description-colwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 75px;
+
+    .description-col {
+        width: 100%;
+        max-width: calc(50% - 20px);
+        flex: 0 0 calc(50% - 20px);
+
+        img {
+            height: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+        }
+    }
+}
