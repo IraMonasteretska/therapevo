@@ -107,16 +107,16 @@ $(document).ready(function () {
     var windowWidth = $(document).width(),
         containerWidth = $('.container').width(),
         paddingContainer = ((windowWidth - containerWidth) / 2)
-    $('.spaceleft').css('padding-left', paddingContainer);
-    $('.spaceright').css('padding-right', paddingContainer);
+    $('.spaceleft, .ourclients-wb').css('padding-left', paddingContainer);
+    $('.spaceright, .ourclients-wb .bg-mainblue').css('padding-right', paddingContainer);
 
 
     $(window).resize(function () {
         var windowWidth = $(document).width(),
             containerWidth = $('.container').width(),
             paddingContainer = ((windowWidth - containerWidth) / 2)
-        $('.spaceleft').css('padding-left', paddingContainer);
-        $('.spaceright').css('padding-right', paddingContainer);
+        $('.spaceleft, .ourclients-wb').css('padding-left', paddingContainer);
+        $('.spaceright, .ourclients-wb .bg-mainblue').css('padding-right', paddingContainer);
 
     });
 
@@ -189,5 +189,25 @@ $(document).ready(function () {
             },
         },
     });
+
+
+    // hiring page
+
+    var swiper = new Swiper(".teamslove-slider", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        speed:1200,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+
 
 })
