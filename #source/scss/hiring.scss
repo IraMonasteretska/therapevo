@@ -100,7 +100,9 @@
         border-radius: 10px 0 0 10px;
         top: 120px;
         height: calc(100% - 240px);
-        max-width: calc(50% - 50px);
+        width: calc(50% - 50px);
+        object-fit: cover;
+        object-position: 0 0;
     }
 }
 
@@ -641,7 +643,9 @@
     }
 }
 
-.bottomslider-nav .swiper-button-next, .bottomslider-nav .swiper-button-prev, .bottomslider-nav .swiper-pagination {
+.bottomslider-nav .swiper-button-next,
+.bottomslider-nav .swiper-button-prev,
+.bottomslider-nav .swiper-pagination {
     vertical-align: middle;
 }
 
@@ -656,8 +660,167 @@
     }
 }
 
+.reqapply {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+
+    .lineappl {
+        position: absolute;
+        left: 0;
+        top: -30px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        height: 564px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-header {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: #0E4271;
+        margin-bottom: 28px;
+    }
+
+    h4 {
+        color: #F3776D;
+    }
+}
+
+.reqapply__itemwrap {
+    width: 100%;
+
+    &:nth-child(1) {
+        margin-top: 210px;
+        max-width: 28%;
+        flex: 0 0 28%;
+    }
+
+    &:nth-child(2) {
+        margin-top: 60px;
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    &:nth-child(3) {
+        margin-top: 240px;
+        max-width: 22%;
+        flex: 0 0 22%;
+    }
+
+    &:nth-child(4) {
+        margin-top: 60px;
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+.reqapply__item {
+    width: 100%;
+    max-width: 237px;
+
+    .iconwrap {
+        width: 108px;
+        height: 104px;
+        border-radius: 10px;
+        border: 1px solid #8D99AF;
+        box-shadow: 2px 2px 40px rgba(#C7E3F8, 0.5);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+        background: #fff;
+
+        img {
+            width: 64px;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #0E4271;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 130%;
+    }
 
 
+}
+
+.rdysect2 {
+    padding-bottom: 90px;
+
+    .lpic {
+        img {
+            vertical-align: top;
+            border-radius: 10px;
+            border: 1px solid #8D99AF;
+        }
+    }
+
+    .description {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 40px 128px;
+        height: 100%;
+
+        h2 {
+            color: #fff;
+            margin-bottom: 28px;
+        }
+
+        p {
+            color: #fff;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 130%;
+            margin-bottom: 28px;
+        }
+
+        a {
+            min-width: 153px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .smalltext {
+            p {
+                font-size: 14px;
+                font-weight: 500;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.hero-pages.herov2-2 .hero-pages__content h1:last-child {
+    margin-bottom: 0;
+}
+
+.rdysect2 {
+    .lpic {
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+}
 
 
 
@@ -678,29 +841,745 @@
 
     .reqapply__itemwrap {
         width: 100%;
-        
+
         &:nth-child(1) {
             margin-top: 210px;
             max-width: 28%;
             flex: 0 0 28%;
         }
-    
+
         &:nth-child(2) {
             margin-top: 80px;
             max-width: 30%;
             flex: 0 0 30%;
         }
-    
+
         &:nth-child(3) {
             margin-top: 240px;
             max-width: 22%;
             flex: 0 0 22%;
         }
-    
+
         &:nth-child(4) {
             margin-top: 70px;
             max-width: 20%;
             flex: 0 0 20%;
         }
     }
+
+    .description-colwrap .description-col img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .description-colwrap {
+        margin-bottom: 40px;
+    }
+
+    .infosection4 .colimg {
+        height: calc(100% - 220px);
+    }
+
+    .lookfor {
+        height: 750px;
+    }
+
+    .includes-section {
+        padding: 100px 0 0 0;
+    }
+
+    .includes-linesect:after {
+        width: 300px;
+    }
+
+    .includesbox .description ul {
+        max-width: 360px;
+    }
+
+    .includesbox {
+        margin-bottom: 60px;
+    }
+
+    .includesbox .description ul li {
+        margin-bottom: 16px;
+    }
+
+    .ourclients-wb .description ul li {
+        margin-bottom: 24px;
+    }
+
+    .iconboxes-sect__item h5 {
+        margin-bottom: 5px;
+    }
+
+    .teamslove__header {
+        margin-bottom: 50px;
+    }
+
+    .rdysect2 .description h2 {
+        font-size: 42px;
+    }
+
+    .rdysect2 .description {
+        padding: 30px 100px;
+    }
+
+
+    .description-colwrap .description-col p,
+    .infosection4 .wraptext p,
+    .teamslove-slide .leftinfo p.name {
+        font-size: 18px;
+    }
+
+    .hirearrsect,
+    .infosection4,
+    .iconboxes-sect,
+    .teamslove,
+    .reqapply {
+        padding: 100px 0;
+    }
+
+    .hirearrsect h3,
+    .infosection4 h2,
+    .includes-section h3 {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .hirearrbox3 {
+        padding: 20px 20px 20px 40px;
+    }
+
+    .hirearrbox1,
+    .hirearrbox2,
+    .hirearrbox3 {
+        height: 170px;
+    }
+
+    .infosection4 .wraptext {
+        padding: 30px;
+    }
+
+    .lookfor__box {
+        max-width: calc(50% - 20px);
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .includes-linesect {
+        padding: 60px 0;
+    }
+
+    .includesbox .description ul,
+    .includesbox .description p {
+        max-width: 310px;
+    }
+
+    .includes-bottomsect__textblock {
+        min-height: 200px;
+    }
+
+    .ourclients-wb {
+        padding-top: 100px;
+    }
+
+    .iconboxes-sect__item img {
+        max-height: 74px;
+    }
+
+    .iconboxes-sect__item {
+        padding: 30px 40px 30px 30px;
+    }
+
+    .teamslove-slide:after {
+        width: 200px;
+    }
+
+    .teamslove-slide {
+        padding: 40px 0px 30px 15px;
+    }
+
+    .teamslove-slide .descr p {
+        font-size: 15px;
+    }
+
+    .teamslove-slide .imgwrap img {
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .teamslove-slide .leftinfo p.name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .teamslove-slide .leftinfo p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .teamslove-slide .imgwrap {
+        height: 150px;
+    }
+
+    .teamslove .bird {
+        max-width: 350px;
+    }
+
+    .reqapply .lineappl {
+        height: 400px;
+    }
+
+    .rdysect2 .description {
+        padding: 30px 40px;
+    }
+
+    .rdysect2 .description a {
+        margin-bottom: 16px;
+    }
+
+
+
+
+    .hirearrsect h3,
+    .section-header {
+        margin-bottom: 28px;
+    }
+
+    .infosection4 h2,
+    .includes-section h3,
+    .includesbox .description h4,
+    .includesbox .description p,
+    .includesbox .description ul,
+    .ourclients-wb .description h2,
+    .ourclients-wb .description p,
+    .ourclients-wb .description ul li,
+    .section-header h2,
+    .rdysect2 .description h2 {
+        margin-bottom: 16px;
+    }
+
+    .hirearrbox1 p,
+    .hirearrbox2 p,
+    .hirearrbox3 p,
+    .includesbox .description p,
+    .includesbox .description ul li,
+    .includes-bottomsect__textblock p,
+    .ourclients-wb .description p,
+    .teamslove__header p,
+    .reqapply__item p,
+    .rdysect2 .description p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .hirearrbox1 {
+        padding: 20px 50px 20px 30px;
+    }
+
+    .hirearrbox2 {
+        padding: 20px 50px 20px 60px;
+    }
+
+    .hirearrbox3 {
+        padding: 20px 20px 20px 50px;
+    }
+
+    .description-colwrap .description-col {
+        max-width: calc(50% - 5px);
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .description-colwrap {
+        margin-bottom: 16px;
+    }
+
+    .lookfor__box p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .lookfor__box p:after {
+        top: 3px;
+    }
+
+    .lookfor__box {
+        min-height: 300px;
+    }
+
+    .lookfor {
+        height: auto;
+        min-height: 650px;
+    }
+
+    .includesbox .description p,
+    .includesbox .description ul {
+        max-width: 100%;
+    }
+
+    .includes-linesect:after {
+        width: 200px;
+    }
+
+    .includes-bgbird {
+        max-width: 200px;
+    }
+
+    .ourclients-wb .description ul li {
+        margin-bottom: 10px;
+    }
+
+    .teamslove__header h2 span {
+        margin: 0;
+    }
+
+    .teamslove .bird {
+        max-width: 200px;
+        top: calc(100% - 100px);
+        left: 40px;
+    }
+
+    .rdysect2 .description h2 {
+        font-size: 32px;
+    }
+
+
+
+
+
+
+    .lookfor h2 {
+        margin-bottom: 28px;
+    }
+
+    .teamslove__header h2,
+    .rdysect2 .description p {
+        margin-bottom: 16px;
+    }
+
+    .hirearrbox1 p,
+    .hirearrbox2 p,
+    .hirearrbox3 p,
+    .description-colwrap .description-col p,
+    .infosection4 .wraptext p,
+    .includes-bottomsect__textblock p,
+    .rdysect2 .description p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .hirearrbox1,
+    .hirearrbox2,
+    .hirearrbox3 {
+        background: none;
+        margin: 0;
+        width: 100%;
+        max-width: 33.333%;
+        flex: 0 0 33.333%;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hirearrbox1 {
+        background: #E2F0F9;
+    }
+
+    .hirearrbox2 {
+        background: #C7E3F8;
+    }
+
+    .hirearrbox3 {
+        background: #0E4271;
+    }
+
+    .infosection4 .colimg {
+        display: none;
+    }
+
+    .description-colwrap .description-col {
+        max-width: calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .lookfor__box {
+        padding: 30px;
+
+        &:nth-child(1) {
+            img {
+                object-position: 100% 0;
+            }
+        }
+
+        &:nth-child(2) {
+            img {
+                object-position: 0 0;
+            }
+        }
+    }
+
+    .includes-section {
+        padding-top: 80px;
+    }
+
+    .includes-bgbird {
+        max-width: 160px;
+    }
+
+    .includes-bottomsect__textblock {
+        padding: 25px;
+        min-height: 160px;
+    }
+
+    .ourclients-wb {
+        padding-top: 80px;
+        position: relative;
+    }
+
+    .ourclients-wb .description {
+        position: relative;
+        z-index: 2;
+    }
+
+    .ourclients-wb .bg-mainblue {
+        position: initial;
+    }
+
+    .teamslove-slide .imgwrap img {
+        width: 100%;
+    }
+
+    .teamslove-slide .imgwrap {
+        height: 190px;
+    }
+
+    .teamslove-slide .descr p,
+    .teamslove-slide .leftinfo p {
+        font-size: 16px;
+    }
+
+    .reqapply .lineappl {
+        display: none;
+    }
+
+    .reqapply__itemwrap {
+        margin-top: 0 !important;
+        width: 100% !important;
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+        margin-bottom: 20px;
+    }
+
+    .reqapply .section-header {
+        margin-bottom: 28px;
+    }
+
+    .reqapply__item .iconwrap {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .description-colwrap,
+    .infosection4 h2 {
+        margin-bottom: 28px;
+    }
+
+    .lookfor__box h4 {
+        margin-bottom: 16px;
+    }
+
+    .teamslove-slide .leftinfo p.name {
+        font-size: 21px;
+    }
+
+    .hirearrsect,
+    .hirearrsect,
+    .iconboxes-sect,
+    .infosection4,
+    .reqapply,
+    .teamslove,
+    .lookfor {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .hirearrbox1,
+    .hirearrbox2,
+    .hirearrbox3 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        height: auto;
+        min-height: 100px;
+        padding: 15px;
+    }
+
+    .lookfor__box {
+        padding: 20px;
+    }
+
+    .lookfor__box p {
+        font-size: 14px;
+        margin-bottom: 5px;
+
+        b {
+            margin-top: 5px;
+        }
+    }
+
+    .lookfor {
+        min-height: inherit;
+    }
+
+    .includes-linesect {
+        .description {
+            margin-bottom: 20px;
+        }
+    }
+
+    .includes-linesect .row:nth-child(even) {
+        .col-xl-5 {
+            order: 2;
+        }
+
+        .col-xl-4 {
+            order: 1;
+        }
+    }
+
+    .ourclients-wb__bgpic {
+        display: none;
+    }
+
+    .ourclients-wb .bg-mainblue {
+        padding-left: 40px;
+    }
+
+    .ourclients-wb .bg-mainblue:after {
+        display: none;
+    }
+
+    .iconboxes-sect__item {
+        min-height: 140px;
+    }
+
+    .teamslove__header {
+        margin-bottom: 20px;
+    }
+
+    .bottomslider-nav {
+        margin-top: 20px;
+    }
+
+    .teamslove .bird {
+        left: 20px;
+        width: 150px;
+    }
+
+    .rdysect2 {
+        .col-md-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .rdysect2 .description {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+
+
+
+
+
+
+    .includes-section h3 br {
+        display: none;
+    }
+
+    .lookfor__box p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .lookfor__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+        height: auto;
+        min-height: initial;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .includes-section {
+        padding: 60px 0 0 0;
+    }
+
+    .includes-linesect {
+        padding: 30px 0;
+    }
+
+    .includes-linesect:after {
+        width: 100px;
+    }
+
+    .includesbox {
+        margin-bottom: 40px;
+    }
+
+    .includes-bottomsect__textblock {
+        padding: 20px;
+        min-height: 120px;
+    }
+
+    .ourclients-wb {
+        padding-top: 60px;
+    }
+
+    .ourclients-wb .description {
+        padding: 60px 0;
+    }
+
+    .teamslove-slide .imgwrap {
+        height: 160px;
+    }
+
+    .teamslove-slide .leftinfo p.name {
+        font-size: 18px;
+    }
+
+    .teamslove-slide {
+        padding: 20px 0px 20px 10px;
+    }
+
+    .teamslove-slide:after {
+        width: 150px;
+    }
+
+    .teamslove-slide .leftinfo {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-bottom: 10px;
+    }
+
+    .teamslove-slide .imgwrap {
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
+
+    .teamslove-slide .descr {
+        max-width: calc(100% - 150px);
+        flex: 0 0 calc(100% - 150px);
+    }
+
+    .teamslove-slide:after {
+        width: 60%;
+    }
+
+    .teamslove .bird {
+        width: 100px;
+        left: 10px;
+        top: calc(100% - 40px);
+    }
+
+    .reqapply__itemwrap {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .reqapply__item {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+        .iconwrap {
+            max-width: 80px;
+            flex: 0 0 80px;
+            margin-bottom: 0;
+        }
+
+        p {
+            max-width: calc(100% - 80px);
+            flex: 0 0 calc(100% - 80px);
+            padding-left: 10px;
+        }
+    }
+
+    .rdysect2 .description {
+        padding: 20px 30px;
+    }
+
+    body section {
+        &:last-child {
+            padding-bottom: 60px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    .reqapply__item p {
+        font-size: 16px;
+    }
+
+    .hirearrsect h3,
+    .infosection4 h2,
+    .ourclients-wb .description ul li,
+    .section-header,
+    .iconboxes-sect__item,
+    .rdysect2 .description {
+        margin-bottom: 16px;
+    }
+
+    .hirearrsect,
+    .hirearrsect,
+    .iconboxes-sect,
+    .infosection4,
+    .lookfor,
+    .reqapply,
+    .teamslove {
+        padding: 60px 0;
+    }
+
 }

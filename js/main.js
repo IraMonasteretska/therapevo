@@ -165,7 +165,7 @@ $(document).ready(function () {
     var swiper2 = new Swiper(".meettherapistsl", {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: true,
+        // loop: true,
         speed: 1000,
         pagination: {
             el: ".swiper-pagination",
@@ -194,7 +194,7 @@ $(document).ready(function () {
     // hiring page
 
     var swiper = new Swiper(".teamslove-slider", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         speed:1200,
@@ -205,6 +205,15 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+
+            992: {
+                slidesPerView: 2,
+            },
         },
     });
 
