@@ -159,6 +159,14 @@ $(document).ready(function () {
             placeholder: "",
             minimumResultsForSearch: Infinity,
         });
+
+        $('.styledselectmodal').select2({
+            placeholder: "",
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('.modal')
+        });
+
+
     }
 
     // meet your therapist
@@ -197,7 +205,7 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
-        speed:1200,
+        speed: 1200,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -217,6 +225,18 @@ $(document).ready(function () {
         },
     });
 
+    // upload - hide modal
+    if ($('#upload').length) {
+        document.getElementById('upload').addEventListener('change', function () {
+            let fileName = this.files.length > 0 ? this.files[0].name : '';
+            document.getElementById('upload-text').value = fileName;
+        });
+    }
 
+    // faq
+    $('.faqsection .linkarrow').click(function(e){
+        e.preventDefault();
+        $('.faq').toggleClass('active');
+    })
 
 })

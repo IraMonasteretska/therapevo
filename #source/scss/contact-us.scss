@@ -189,9 +189,13 @@
 
 .hiw__bird {
     position: absolute;
-    right: 0;
-    top: -200px;
-    max-width: 405px;
+    right: 0 !important;
+    left: inherit !important;
+    bottom: -400px !important;
+    max-width: 405px !important;
+    width: 100% !important;
+    z-index: 3;
+    max-height: inherit !important;
 }
 
 .arrowsbtnwrap {
@@ -397,8 +401,8 @@
     }
 
     .hiw__bird {
-        max-width: 300px;
-        top: -170px;
+        max-width: 300px !important;
+        bottom: -300px !important;
     }
 
     .hiwlist li {
@@ -433,7 +437,6 @@
 
     .hiw__bird {
         max-width: 220px;
-        top: -120px;
     }
 
     .emailus__leftinfo {
@@ -488,9 +491,7 @@
 }
 
 @media(max-width: 1199.8px) {
-    .rdysect1 {
-        overflow: hidden;
-    }
+   
 
     .hero-pages.herov2-3 .hero-pages__content {
         max-width: 460px;

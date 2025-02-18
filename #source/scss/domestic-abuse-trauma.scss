@@ -1,0 +1,33 @@
+.infpic ul {
+    li {
+        margin-bottom: 0;
+    }
+}
+
+.mightnotice.v2 .mightnotice__box.h-v1 {
+    min-height: 170px;
+}
+
+.fourthboxes .horsteps__box {
+    max-width: 365px;
+}
+
+.countssection.p110 {
+    padding: 110px 0;
+}
+
+.faq.showmore {
+    .faqrow {
+        &:nth-child(n+4) {
+            display: none;
+        }
+    }
+
+    &.active {
+        .faqrow {
+            &:nth-child(n+4) {
+                display: block;
+            }
+        }
+    }
+}

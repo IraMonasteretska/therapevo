@@ -84,6 +84,7 @@
     .imgwrap {
         img {
             width: 100%;
+            border-radius: 10px;
         }
     }
 
@@ -96,8 +97,11 @@
     .textwrapper {
         background: #0E4271;
         position: relative;
-        padding: 114px 64px;
+        padding: 50px 64px;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        min-height: 562px;
 
         .absel {
             position: absolute;
@@ -116,5 +120,815 @@
             font-weight: 500;
             line-height: 130%;
         }
+    }
+}
+
+.chesssect {
+    position: relative;
+    padding: 20px 0 110px;
+
+
+    h3 {
+        margin-bottom: 70px;
+        color: #0E4271;
+        text-align: center;
+    }
+
+    .bottominfo {
+        margin-top: 20px;
+
+        p {
+            color: #0E4271;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.chesssect__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 219px;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.chesssect__item {
+    background: #E2F0F9;
+    display: flex;
+    align-items: center;
+
+    .text-wrap {
+        padding: 15px 40px;
+    }
+
+    h5 {
+        margin-bottom: 12px;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 130%;
+        color: #0E4271;
+    }
+
+    p {
+        color: #0E4271;
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 500;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.transparent {
+        border: 1px solid #0E4271;
+        background: transparent;
+    }
+}
+
+.findyourther {
+    position: relative;
+    padding: 117px 0 135px;
+
+    h3 {
+        color: #0E4271;
+        margin-bottom: 28px;
+    }
+
+    .bluebtn {
+        min-width: 224px;
+        justify-content: center;
+    }
+
+    .lglink {
+        font-size: 51px;
+        font-family: 'DegularDisplay';
+        color: #0E4271;
+        line-height: 130%;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 28px;
+
+        &::after {
+            content: '';
+            display: block;
+            background: #0E4271;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 4px;
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            &::after {
+                width: 0;
+            }
+        }
+    }
+
+    .findyourther-top {
+        margin-bottom: 66px;
+    }
+
+    p {
+        margin: 0;
+        color: #0E4271;
+    }
+
+    .absel1 {
+        position: absolute;
+        top: 59px;
+        left: 40px;
+        border-radius: 10px;
+    }
+
+    .absel2 {
+        position: absolute;
+        border-radius: 10px;
+        bottom: 83px;
+        left: 168px;
+    }
+
+    .absel3 {
+        position: absolute;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px 0 0 10px;
+        max-width: 405px;
+    }
+}
+
+.internsect {
+    padding: 120px 0;
+
+    .internsect__top {
+        margin-bottom: 90px;
+    }
+
+    .internsect__imgs {
+        height: 528px;
+        position: relative;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .leftpic {
+            max-width: 364px;
+            width: 100%;
+        }
+
+        .rightpic {
+            max-width: 278px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+    }
+
+    .descr {
+        color: #fff;
+
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 28px;
+
+            &.subtitle {
+                margin-bottom: 16px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h2 {
+            margin-bottom: 28px;
+        }
+
+        .icblocks {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .icblock {
+            min-height: 190px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            padding: 28px 20px 20px 20px;
+            display: flex;
+            width: 100%;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+
+                b {
+                    font-weight: 500;
+                }
+            }
+
+            img {
+                width: 32px;
+                margin-bottom: 12px;
+            }
+
+            &:nth-child(1) {
+                max-width: 38%;
+                flex: 0 0 38%;
+            }
+
+            &:nth-child(2) {
+                max-width: calc(62% - 20px);
+                flex: 0 0 calc(62% - 20px);
+            }
+        }
+
+
+    }
+
+
+}
+
+.internsect__bott {
+    display: flex;
+    align-items: center;
+
+    .descr {
+        max-width: 494px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .whitebtn {
+            margin-top: 12px;
+        }
+    }
+
+    .imgwrap {
+        img {
+            border-radius: 10px;
+            vertical-align: top;
+        }
+    }
+}
+
+.rdytosbegin-incol {
+    padding: 100px 0;
+}
+
+.rdytosbegin-incol__row {
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 365px;
+        flex: 0 0 365px;
+        height: 246px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .descrwrap {
+        width: 100%;
+        max-width: calc(100% - 365px);
+        flex: 0 0 calc(100% - 365px);
+        padding-left: 65px;
+
+        h2 {
+            color: #0E4271;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            color: #0E4271;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 130%;
+            max-width: 774px;
+        }
+
+        a {
+            min-width: 260px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.hero-pages.herov3 {
+
+    h4,
+    h1,
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .sessrate-item {
+        max-width: calc(33% - 10px);
+    }
+
+    .sessrates .sessrate-items {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .icsect {
+        padding: 100px 0 90px;
+    }
+
+    .icsect .text-center {
+        margin-top: 40px;
+    }
+
+    .imgsect1 .textwrapper {
+        min-height: 440px;
+    }
+
+    .imgsect1.beforeround {
+        padding-bottom: 185px;
+    }
+
+    .findyourther .absel3 {
+        max-width: 340px;
+    }
+
+    .findyourther .absel1 {
+        max-width: 320px;
+        top: 12%;
+    }
+
+    .findyourther .absel2 {
+        max-width: 240px;
+        bottom: 15%;
+    }
+
+    .findyourther .lglink {
+        font-size: 42px;
+    }
+
+    .findyourther .findyourther-top {
+        margin-bottom: 40px;
+    }
+
+    .rdytosbegin-incol__row {
+        padding: 30px;
+    }
+
+
+
+
+
+    .imgsect1 .textwrapper p,
+    .internsect .descr p,
+    .rdytosbegin-incol__row .descrwrap p {
+        font-size: 18px;
+    }
+
+    .icsect__item img {
+        margin-bottom: 16px;
+    }
+
+    .chesssect h3 {
+        margin-bottom: 40px;
+    }
+
+    .sessrates {
+        padding: 100px 0;
+    }
+
+    .findyourther,
+    .internsect {
+        padding: 100px 0;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .sessrate-item {
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+
+    .sessrates .sessrate-items {
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+    .icsect .text-center {
+        margin-top: 20px;
+    }
+
+    .findyourther .absel3 {
+        max-width: 280px;
+    }
+
+    .findyourther .absel1 {
+        max-width: 280px;
+    }
+
+    .findyourther .absel2 {
+        max-width: 200px;
+    }
+
+    .findyourther .lglink {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .findyourther .lglink:after {
+        height: 2px;
+    }
+
+    .findyourther .findyourther-top {
+        margin-bottom: 30px;
+    }
+
+    .internsect .internsect__imgs .rightpic {
+        max-width: 250px;
+    }
+
+    .internsect .descr .icblock {
+        padding: 20px 16px;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .internsect .descr .icblock:nth-child(2) {
+        max-width: calc(62% - 10px);
+        flex: 0 0 calc(62% - 10px);
+    }
+
+    .internsect .internsect__top {
+        margin-bottom: 60px;
+    }
+
+    .internsect__bott .descr .whitebtn {
+        margin-top: 0;
+    }
+
+    .rdytosbegin-incol__row .imgwrap {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .rdytosbegin-incol__row .descrwrap {
+        max-width: calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
+        padding-left: 50px;
+    }
+
+
+
+
+    .icsect__item p {
+        font-size: 18px;
+    }
+
+    .sessrate-item p.title,
+    .sessrates h3,
+    .findyourther h3,
+    .internsect .descr h2,
+    .internsect .descr p,
+    .internsect__bott .descr h3,
+    .imgsect1 .textwrapper h2 {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .sessrate-item {
+        padding: 30px;
+    }
+
+    .imgsect1 .twcol {
+        margin-left: 0;
+    }
+
+    .imgsect1 .textwrapper {
+        padding: 50px 40px;
+    }
+
+    .imgsect1 .textwrapper .absel {
+        width: 100px;
+    }
+
+    .imgsect1 .imgwrap {
+        position: relative;
+
+        img {
+            width: calc(100% + 50px);
+            max-width: inherit;
+        }
+    }
+
+    .findyourther .absel3 {
+        max-width: 200px;
+    }
+
+    .findyourther .absel1 {
+        max-width: 180px;
+        top: 30%;
+        left: 2%
+    }
+
+    .findyourther .absel2 {
+        max-width: 150px;
+        left: 10%;
+        bottom: 17%;
+    }
+
+    .internsect .internsect__imgs {
+        height: 100%;
+    }
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .sessrate-item {
+        padding: 20px;
+    }
+
+    .imgsect1 .imgwrap img {
+        width: calc(100% + 20px);
+    }
+
+    .imgsect1 {
+        padding: 80px 0;
+    }
+
+    .imgsect1.beforeround {
+        padding-bottom: 140px;
+    }
+
+    .chesssect .bottominfo p br {
+        display: none;
+    }
+
+    .chesssect {
+        padding-bottom: 80px;
+    }
+
+    .absel1,
+    .absel2,
+    .absel3 {
+        display: none;
+    }
+
+    .internsect .internsect__imgs .leftpic {
+        max-width: 280px;
+    }
+
+    .internsect .internsect__imgs .rightpic {
+        left: initial;
+        right: 0;
+    }
+
+    .internsect .descr .icblock {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        margin-bottom: 16px;
+        height: auto;
+        min-height: inherit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .internsect .internsect__imgs {
+        max-height: 500px;
+    }
+
+    .internsect .descr .icblocks {
+        margin-top: 0;
+    }
+
+    .rdytosbegin-incol__row .imgwrap {
+        height: auto;
+    }
+
+    .rdytosbegin-incol__row .descrwrap {
+        padding-left: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .countssection,
+    .sessrates,
+    .icsect,
+    .findyourther,
+    .internsect,
+    .rdytosbegin-incol {
+        padding: 80px 0;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .rdytosbegin-incol__row .imgwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .sessrate-item {
+        max-width: 100%;
+        flex: 0 0 100%;
+        min-height: inherit;
+    }
+
+    .icsect__item {
+        margin-bottom: 20px;
+    }
+
+    .imgsect1 .imgwrap {
+        display: none;
+    }
+
+    .internsect .internsect__imgs .leftpic {
+        max-width: 300px;
+    }
+
+    .internsect .internsect__imgs {
+        margin-bottom: 40px;
+        height: auto;
+    }
+
+    .internsect__bott {
+        flex-wrap: wrap;
+    }
+
+    .internsect__bott .descr {
+        margin-bottom: 30px;
+    }
+
+    .rdytosbegin-incol__row .descrwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .rdytosbegin-incol__row .imgwrap {
+        margin-bottom: 20px;
+    }
+
+    .rdytosbegin-incol__row .descrwrap {
+        padding-left: 0;
+    }
+
+
+
+    .rdytosbegin-incol__row .descrwrap h2,
+    .rdytosbegin-incol__row .descrwrap p {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .icsect__item img {
+        height: 48px;
+        margin-bottom: 10px;
+    }
+
+    .imgsect1 .textwrapper {
+        padding: 40px 30px 50px 30px;
+        min-height: initial;
+    }
+
+    .imgsect1.beforeround {
+        padding-bottom: 90px;
+    }
+
+    .mightnotice_round {
+        padding-top: 30px !important;
+    }
+
+    .chesssect__item .text-wrap {
+        padding: 20px;
+    }
+
+    .chesssect__item {
+        height: auto;
+    }
+
+    .chesssect {
+        padding-bottom: 60px;
+    }
+
+    .rdytosbegin-incol__row {
+        padding: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .chesssect h3 {
+        margin-bottom: 28px;
+    }
+
+    .icsect__item p,
+    .internsect .descr p,
+    .rdytosbegin-incol__row .descrwrap p {
+        font-size: 16px;
+    }
+
+    .chesssect .bottominfo p {
+        font-size: 18px;
+    }
+
+    .sessrate-item,
+    .icsect__item,
+    .chesssect__item {
+        margin-bottom: 16px;
+    }
+
+    .countssection,
+    .findyourther,
+    .icsect,
+    .internsect,
+    .rdytosbegin-incol,
+    .sessrates,
+    .imgsect1 {
+        padding: 60px 0;
     }
 }

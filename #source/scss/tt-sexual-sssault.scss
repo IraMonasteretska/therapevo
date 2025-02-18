@@ -125,11 +125,11 @@
 }
 
 .topwhiteround2 {
-    height: 155px;
+    height: 100px;
     width: 100%;
     position: absolute;
     left: 0;
-    top: -155px;
+    top: -100px;
     z-index: 2;
 }
 
@@ -221,8 +221,10 @@
         margin-top: 16px;
     }
 
-
-
+    .topwhiteround2 {
+        height: 60px;
+        top: -60px;
+    }
 
 
 

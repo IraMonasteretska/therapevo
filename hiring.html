@@ -822,7 +822,8 @@
                                     expertise.
                                     Make a meaningful impact while thriving in a supportive, collaborative environment.
                                 </p>
-                                <a href="#" class="whitebtn">apply now</a>
+                                <a href="#" class="whitebtn" data-bs-toggle="modal" data-bs-target="#hidemodal">apply
+                                    now</a>
                                 <div class="smalltext">
                                     <p>
                                         Have questions? We’re here to help — reach out anytime!
@@ -904,6 +905,96 @@
             </div>
         </div>
     </footer>
+
+
+
+    <div class="modal fade frmmodal" id="hidemodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="titleformtext">
+                    Hi!<br>
+                    I'd love to hear from you via this confidential form.<br>
+                    Usually, I am able to respond within 72 hours.<br><br>
+                    <b>--Caleb</b>
+                </p>
+                <h3>
+                    Request an Interview or More Information
+                </h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="#">What position are you applying for?</label>
+                                <div class="select-wrapper">
+                                    <select name="" id="gender" class="styledselectmodal" data-placeholder="">
+                                        <!-- <option></option> -->
+                                        <option value="1">Psychotherapist</option>
+                                        <option value="2">Psychotherapist</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="more">More information</label>
+                                <input type="text" id="more">
+                                <p>Please tell us a little about yourself and why you’re applying</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inputitem">
+                                <label for="upload">File Upload</label>
+                                <div class="upload">
+                                    <input type="text" id="upload-text">
+                                    <input type="file" style="display: none;" id="upload">
+                                    <label for="upload" class="uploadlabel">Browse</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="bluebtn bluebtn__border">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 
 <script src="js/lib/jquery.js"></script>

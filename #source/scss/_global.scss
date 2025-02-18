@@ -317,7 +317,7 @@ img {
 
 
 // --------------------
-// v1,v2,v3,v4, v5
+// v1,v2,v3,v4,v5
 .infpic .v4 {
     padding-bottom: 55px;
 
@@ -330,6 +330,10 @@ img {
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+
+    &.pb118 {
+        padding-bottom: 118px;
     }
 }
 
