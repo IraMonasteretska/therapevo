@@ -354,11 +354,38 @@ img {
     }
 }
 
+.infpic .imgswrap.v6 {
+    padding-bottom: 89px;
+
+    .mainimg {
+        z-index: 2;
+        position: relative;
+        max-width: 385px;
+    }
+
+    .subimg {
+        max-width: 365px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+@media(max-width:1500px) {
+    .infpic .imgswrap.v6 .mainimg {
+        max-width: 80%;
+    }
+
+    .infpic .imgswrap.v6 .subimg {
+        max-width: 70%;
+    }
+}
 
 @media(max-width:1399.8px) {
     .infpic .imgswrap__rightbottom.imgswrap .subimg {
         max-width: 70%;
     }
+
+    
 }
 
 @media(max-width:1199.8px) {
@@ -370,6 +397,11 @@ img {
 @media(max-width:991.8px) {
     .infpic .imgswrap.v5 .mainimg,
     .infpic .imgswrap.v5 .subimg {
+        max-width: 80%;
+    }
+
+    .infpic .imgswrap.v6 .mainimg,
+    .infpic .imgswrap.v6 .subimg {
         max-width: 80%;
     }
 }
@@ -404,3 +436,5 @@ img {
 
 // rdysect1
 // rdysect2
+
+// textblock1 (Pornography Addiction Therapy)
