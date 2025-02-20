@@ -1,0 +1,30 @@
+.textblock.bg-mainblue h4 {
+    color: #fff;
+}
+
+.bird-left {
+    position: absolute;
+    left: 40px;
+    top: -160px;
+    z-index: 5;
+    width: 295px;
+}
+
+.bird-right {
+    position: absolute;
+    right: 40px;
+    top: -160px;
+    z-index: 5;
+    width: 295px;
+}
+
+.infpic {
+    h4 {
+        color: #0E4271;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

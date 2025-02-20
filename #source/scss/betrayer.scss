@@ -1,0 +1,112 @@
+.mightnotice .mightnotice__box.h-v2 {
+    min-height: 160px;
+}
+
+.step-process .section-header {
+    h2 {
+        margin-bottom: 28px;
+    }
+
+    p {
+        text-align: center;
+        color: #0E4271;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+}
+
+.step-process__wrap.v2 {
+    .step-process__item {
+        margin-bottom: 35px;
+    }
+}
+
+.rdytostart.bg-lightblue {
+    h3 {
+        color: #0E4271;
+        margin-bottom: 44px;
+
+        span,
+        a {
+            color: #F3776D;
+        }
+    }
+}
+
+.rdytostart.v2 {
+    padding: 90px 0;
+
+    .el2 {
+        width: 130px;
+        top: -15px;
+        right: 5%;
+    }
+
+    .el1 {
+        top: initial;
+        bottom: -30px;
+        transform: none;
+    }
+}
+
+.rdytostart.v3 .el2 {
+    width: 130px;
+    top: -20px;
+    right: 5%;
+}
+
+.rdytostart.v3 .el1 {
+    width: 115px;
+    left: 5px;
+}
+
+.faqsection-wrap.p110 + .meetyourtherapist  {
+    padding-top: 0;
+}
+
+.countssection:last-child {
+    margin-bottom: 40px;
+}
+
+.infpic p a {
+    color: #0E4271;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+
+
+@media(max-width:1599.8px) {
+    .mightnotice__box .descrwrap p br {
+        display: none;
+    }
+
+    .step-process .section-header p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .rdytostart.bg-lightblue h3,
+    .step-process .section-header h2 {
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .rdytostart.v2 {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .mightnotice .mightnotice__box.h-v2 {
+        min-height: initial;
+    }
+}

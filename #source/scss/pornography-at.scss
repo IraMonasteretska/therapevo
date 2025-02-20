@@ -285,7 +285,9 @@
 @media(max-width:1599.8px) {
 
     .textblock1 p,
-    .infpic .big-p p {
+    .infpic .big-p p,
+    .tcsct .descr p,
+    .benefitssect .section-header p {
         font-size: 18px;
     }
 }
@@ -306,10 +308,10 @@
     .benefits.bg-mainblue .benefits__right ul.listv2 li {
         margin-bottom: 30px;
     }
-    
 
 
-    
+
+
 
     .textblock1 p,
     .textblock1 h4,
@@ -354,17 +356,81 @@
         margin-bottom: 20px;
     }
 
+   
 
 
 
-
-    .infpic,
-    .benefitssect,
     .tcsct .descr {
         padding: 80px 0;
     }
 }
 
+@media(max-width:767.8px) {
+
+    .step-process__item {
+        padding-right: 0;
+        padding-left: 65px;
+        max-width: 100%;
+    }
+
+    .step-process .col-xl-4.offset-xl-6 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .step-process .col-xl-4 .stnum {
+        right: initial !important;
+        left: 0 !important;
+    }
+
+    .step-process__item:after {
+        display: none;
+    }
+
+    .step-process .col-xl-4 .stnum {
+        margin: 0;
+    }
+
+
+    .benefits__right ul li h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:576.8px) {
+    .topwhiteround2 {
+        height: 30px;
+        top: -30px;
+    }
+
+    .step-process {
+        padding-bottom: 50px;
+    }
+
+    .tcsct .descr {
+        padding: 60px 0;
+    }
+
+
+
+
+
+
+
+    .textblock1 h4 {
+        font-size: 18px;
+    }
+
+    .textblock1 p,
+    .tcsct .descr p {
+        font-size: 16px;
+    }
+
+    .textblock1 {
+        padding: 60px 0;
+    }
+}
 
 
 
