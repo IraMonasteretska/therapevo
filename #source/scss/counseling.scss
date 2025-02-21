@@ -28,3 +28,181 @@
         }
     }
 }
+
+.colpic3 {
+    padding: 100px 0;
+
+    .section-header {
+        text-align: center;
+        // margin-bottom: 70px;
+
+        h2,
+        p {
+            color: #0E4271;
+        }
+    }
+
+    .colpic__box {
+        width: 100%;
+        max-width: 365px;
+        flex: 0 0 365px;
+
+        .imgwrap {
+            height: 243px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                vertical-align: top;
+            }
+        }
+
+        .descr {
+            padding-top: 24px;
+
+            h4 {
+                margin-bottom: 12px;
+                color: #0E4271;
+            }
+
+            p {
+                color: #0E4271;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .bottomsect {
+        text-align: center;
+        margin-top: 80px;
+    }
+}
+
+.benefits__left.onltext {
+
+    h2 {
+        margin-bottom: 43px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+}
+
+@media(max-width:1599.8px) {
+    .colpic3 .colpic__box {
+        max-width: 320px;
+        flex: 0 0 320px;
+    }
+
+    .colpic3 .colpic__box .imgwrap {
+        height: 200px;
+    }
+
+    .benefits__left.onltext h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .benefits__left.onltext h2 {
+        margin-bottom: 16px;
+    }
+
+    .benefits__left.onltext p br {
+        display: none;
+    }
+
+    .colpic3 .colpic__box {
+        max-width: 290px;
+        flex: 0 0 290px;
+    }
+
+
+    
+}
+
+@media(max-width:1199.8px) {
+
+    .bird-right {
+        width: 220px;
+        top: -100px;
+    }
+
+    .bird-left {
+        width: 220px;
+        top: -100px;
+    }
+
+    .colpic3 .bottomsect {
+        margin-top: 40px;
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .bird-right {
+        width: 160px;
+    }
+
+    .bird-left {
+        width: 160px;
+    }
+
+    .colpic3 .colpic__box {
+        max-width: 220px;
+        flex: 0 0 220px;
+    }
+
+
+
+
+
+    .colpic3 {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+    .colpic3 .colpic__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media(max-width:575.8px) {
+    .bird-right,
+    .bird-left {
+        display: none;
+    }
+
+
+
+
+
+
+    .colpic3 {
+        padding: 60px 0;
+    }
+}
