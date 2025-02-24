@@ -1,0 +1,184 @@
+.textblock {
+    h3 {
+        span {
+            color: #F3776D;
+        }
+    }
+}
+
+.step-process.bg-mainblue {
+    h2 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .step-process__item h3 {
+        color: #fff;
+    }
+}
+
+.step-process__bottomblock {
+    margin-top: 55px;
+
+    h4 {
+        color: #fff;
+        margin-bottom: 28px;
+    }
+}
+
+.step-process__bird1 {
+    position: absolute;
+    left: 60px;
+    top: -150px;
+    width: 237px;
+    z-index: 2;
+}
+
+.step-process__bird2 {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    width: 237px;
+    z-index: 2;
+}
+
+.step-process+.countssection {
+    margin-top: 40px;
+}
+
+.benefits.bg-mainblue .benefits__right ul.listv2 li:last-child {
+    margin-bottom: 0;
+}
+
+.includesbox .description p {
+    span {
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 500;
+        display: block;
+    }
+}
+
+.includes-section {
+    padding-bottom: 90px;
+}
+
+.colpic3 .colpic__box .descr h6 {
+    text-align: center;
+    color: #0E4271;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.faqsection-wrap.p110.pt0 {
+    padding-top: 0;
+}
+
+// family-therapy
+
+.ftinfosect {
+    padding: 90px 0 100px;
+
+    h2,
+    p {
+        color: #0E4271;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 28px;
+
+        b {
+            font-weight: 500;
+        }
+    }
+}
+
+.ft-bottsect {
+    margin-top: 100px;
+
+    h3 {
+        color: #0E4271;
+        margin-bottom: 65px;
+        text-align: center;
+    }
+}
+
+.ftinfosect__statistic {
+    border-radius: 10px;
+    padding: 34px;
+}
+
+.ftstbox {
+    text-align: center;
+    color: #fff;
+
+    p {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 130%;
+        margin-bottom: 24px;
+    }
+
+    span {
+        display: block;
+        font-size: 51px;
+        line-height: 110%;
+        font-family: 'DegularDisplay';
+        margin-bottom: 24px;
+    }
+}
+
+
+
+
+
+@media(max-width:1399.8px) {
+
+    .step-process__bird1,
+    .step-process__bird2 {
+        width: 200px;
+    }
+
+    .step-process__bird1 {
+        top: -100px;
+        left: 20px;
+    }
+
+    .step-process__bird2 {
+        right: 5%;
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .step-process__bird1,
+    .step-process__bird2 {
+        width: 150px;
+    }
+
+    .step-process p br {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .step-process__bird1,
+    .step-process__bird2 {
+        display: none;
+    }
+
+    .step-process__bottomblock {
+        margin-top: 20px;
+    }
+}

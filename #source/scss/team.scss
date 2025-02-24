@@ -388,10 +388,6 @@
         flex: 0 0 280px;
     }
 
-    .tmchoose-content__bodysect .tmchoose__box p {
-        min-height: 82px;
-    }
-
     .tmchoose-content__topsect {
         margin-bottom: 120px;
     }
@@ -404,13 +400,199 @@
         padding: 30px 50px;
     }
 
+    .tmchoose-content__bodysect .tmchoose__box p,
+    .tmshedacons__block .descr p,
+    .helpwithsect .section-header p {
+        font-size: 18px;
+    }
 
     .teaminfo .teaminfo-wrapper .teaminfo__left h2,
     .tmchoose-content__topsect h4,
     .tmchoose-content__bodysect .tmchoose__box p,
     .outstory .descr h2,
     .outstory .descr h4,
-    .outstory .descr p {
+    .outstory .descr p,
+    .tmshedacons__block .descr h2,
+    .tmshedacons__block .descr p {
         margin-bottom: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .teaminfo .teaminfo-wrapper .teaminfo__left {
+        padding-right: 40px;
+    }
+
+    .teaminfo .teaminfo-wrapper .teaminfo__right {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .teaminfo .teaminfo-wrapper .teaminfo__left {
+        max-width: calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
+    }
+
+    .helpwithsect {
+        .row {
+            justify-content: center;
+        }
+
+        .col-lg-4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .tmchoose-content {
+        padding: 140px 0 100px;
+    }
+
+    .outstory {
+        padding-top: 160px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .teaminfo .teaminfo-wrapper .teaminfo__left {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .teaminfo .teaminfo-wrapper .teaminfo__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .tmchoose-content__bodysect .tmchoose__box {
+        max-width: calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .tmchoose-content__bodysect .tmchoose__box span {
+        top: 0;
+    }
+
+    .tmchoose-content__topsect {
+        margin-bottom: 60px;
+    }
+
+    .tmchoose-content {
+        padding: 100px 0 10px;
+    }
+
+    .outstory {
+        padding: 120px 0 80px;
+    }
+
+    .tmshedacons {
+        padding: 80px 0;
+    }
+
+    .tmshedacons__block .descr {
+        padding: 20px 30px;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .tmchoose-content__bodysect .tmchoose__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .outstory {
+        .imgwrap {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .teaminfo .teaminfo-wrapper {
+        padding: 20px;
+    }
+
+    .teaminfo .teaminfo-wrapper .teaminfo__left p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .helpwithbox .descr ul li {
+        margin-bottom: 10px;
+    }
+
+    .helpwithbox .descr h5 {
+        margin-bottom: 20px;
+
+        &::after {
+            bottom: -7px;
+        }
+    }
+
+    .tmchoose-content {
+        padding: 60px 0 60px;
+    }
+
+    .tmchoose-content__topsect h2:last-child,
+    .tmchoose-content__topsect h2 {
+        margin-bottom: 16px;
+    }
+
+    .tmchoose-content__bodysect .tmchoose__box span {
+        font-size: 100px;
+    }
+
+    .tmchoose-content__bodysect .tmchoose__box {
+        padding-top: 20px;
+        margin-bottom: 0;
+        margin-top: 40px;
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+    .tmchoose-content__topsect {
+        margin-bottom: 40px;
+    }
+
+    .tmchoose {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .outstory {
+        padding: 90px 0 60px;
+    }
+
+    .tmshedacons__block {
+        flex-wrap: wrap;
+    }
+
+    .tmshedacons__block .imgwrap,
+    .tmshedacons__block .descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .tmshedacons {
+        padding: 60px 0;
+    }
+    
+    .tmshedacons__block .descr {
+        padding: 20px 15px 25px 15px;
     }
 }
