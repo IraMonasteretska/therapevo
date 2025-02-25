@@ -234,9 +234,20 @@ $(document).ready(function () {
     }
 
     // faq
-    $('.faqsection .linkarrow').click(function(e){
+    // $('.faqsection .linkarrow').click(function (e) {
+    //     e.preventDefault();
+    //     $('.faq').toggleClass('active');
+    // })
+    $('.faqsection .linkarrow').click(function (e) {
         e.preventDefault();
         $('.faq').toggleClass('active');
-    })
+    
+        let buttonText = $(this).find('span').text().trim();
+        $(this).find('span').text(buttonText === "View More FAQs" ? "View Less FAQs" : "View More FAQs");
+    });
+
+    // tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 })
