@@ -86,7 +86,7 @@
     h2,
     p {
         color: #0E4271;
-        
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -137,6 +137,155 @@
     }
 }
 
+.benefits__right ul {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.qapage {
+
+    .row {
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .descrwrap {
+        margin: 0;
+    }
+}
+
+.qapage.v2 {
+    .descrwrap.blue {
+        min-height: 370px;
+    }
+
+    .abslem2 {
+        bottom: 10%;
+    }
+
+    .abslem1 {
+        bottom: initial;
+        top: 25%;
+    }
+
+}
+
+.whychoose {
+    .col {
+        &:last-child {
+            .whychoose__box {
+                border-right: none;
+            }
+        }
+    }
+}
+
+.stepsection__box-left p a {
+    color: #F3776D;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.meetyourtherapist {
+    &+.faqsection-wrap.p110 {
+        padding-top: 20px;
+    }
+}
+
+.benefits__right ul.listv2.centeredic li {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.tyforvis {
+    .row {
+        justify-content: center;
+    }
+}
+
+.thhenterapy-el1 {
+    position: absolute;
+    right: 0;
+    top: 37%;
+    max-width: 250px;
+}
+
+.ttboxes {
+    padding: 100px 0;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        color: #0E4271;
+        margin-bottom: 60px;
+    }
+
+    .ttboxes-el1 {
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .ttboxes-el2 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+}
+
+.ttbox {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #0E4271;
+    padding: 36px 24px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    p {
+        font-weight: 500;
+        color: #0E4271;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.colpic3.bg-mainblue {
+
+    h2,
+    p {
+        color: #fff;
+    }
+
+    .colpic__box .descr h6 {
+        color: #fff;
+    }
+}
+
+.benefits__bgimg1 {
+    position: absolute;
+    left: 57px;
+    bottom: -220px;
+}
+
+.benefits {
+    position: relative;
+}
+
+.meetyourtherapist+.faqsection-wrap.bg-grey.p110 {
+    padding: 110px 0;
+}
+
+
 
 
 
@@ -157,6 +306,64 @@
         right: 5%;
     }
 
+    .ft-bottsect {
+        margin-top: 60px;
+
+        h3 {
+            margin-bottom: 28px;
+        }
+    }
+
+    .ftstbox p {
+        font-size: 18px;
+    }
+
+    .ftinfosect p {
+        margin-bottom: 16px;
+    }
+
+    .large-text p {
+        font-size: 18px;
+    }
+
+    .colpic3 .colpic__box .descr h6 br {
+        display: none;
+    }
+
+    .benefits__bgimg1 {
+        max-width: 400px;
+        bottom: -150px;
+    }
+
+    .meetyourtherapist+.faqsection-wrap.bg-grey.p110 {
+        padding: 100px 0;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .ftstbox p br {
+        display: none;
+    }
+
+    .ftstbox p,
+    .ftstbox span {
+        margin-bottom: 16px;
+    }
+
+    .benefits__bgimg1 {
+        max-width: 260px;
+        bottom: -70px;
+    }
+
+    .ttboxes h2 {
+        margin-bottom: 30px;
+    }
+
+    .thhenterapy-el1 {
+        display: none;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -168,6 +375,91 @@
 
     .step-process p br {
         display: none;
+    }
+
+    .qapage .row {
+        align-items: inherit;
+    }
+
+    .ftstbox p {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .ftstbox span {
+        font-size: 32px;
+        margin-bottom: 7px;
+    }
+
+    .qapage.pb180 {
+        padding-bottom: 40px !important;
+    }
+
+
+    .ftinfosect {
+        padding: 80px 0;
+    }
+
+    .ftinfosect__statistic {
+        .col-md-4 {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .qapage .row {
+        margin-bottom: 60px;
+    }
+
+    .ttboxes .ttboxes-el1,
+    .ttboxes .ttboxes-el2 {
+        display: none;
+    }
+
+    .ttboxes {
+        padding: 80px 0 56px;
+    }
+
+    .ttboxes {
+        .col-lg {
+            margin-bottom: 24px;
+        }
+    }
+
+    .benefits__bgimg1 {
+        display: none;
+    }
+
+    .faqsection {
+        max-width: 690px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+    .meetyourtherapist+.faqsection-wrap.bg-grey.p110 {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+    .faqsection {
+        max-width: 516px;
+    }
+
+    .infpic {
+        .row {
+            .col-xl-4:nth-child(1) {
+                .large-text {
+                    margin-top: 30px;
+                }
+            }
+        }
     }
 }
 
@@ -181,4 +473,31 @@
     .step-process__bottomblock {
         margin-top: 20px;
     }
+
+    .large-text p {
+        font-size: 16px;
+    }
+
+    .ttboxes .col-lg {
+        margin-bottom: 16px;
+    }
+
+    .meetyourtherapist+.faqsection-wrap.bg-grey.p110 {
+        padding: 60px 0;
+    }
+
+
+
+
+
+    .ft-bottsect h3,
+    .ttboxes h2 {
+        margin-bottom: 16px;
+    }
+
+    .ftinfosect,
+    .ttboxes {
+        padding: 60px 0;
+    }
+
 }

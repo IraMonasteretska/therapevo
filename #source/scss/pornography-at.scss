@@ -247,22 +247,25 @@
         color: #fff;
     }
 
-    .benefits__right ul.listv2 {
-        li {
-            margin-bottom: 40px;
-
-            img {
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
-    }
+    
 
     .benefits__right ul.listv2+.whitebtn {
         margin-top: 20px;
     }
 
 }
+
+.benefits__right ul.listv2.centeredic {
+    li {
+        margin-bottom: 40px;
+
+        img {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 
 .faqsection-wrap .faqsection {
     .faq {
@@ -305,7 +308,7 @@
         padding-bottom: 80px;
     }
 
-    .benefits.bg-mainblue .benefits__right ul.listv2 li {
+    .benefits.benefits__right ul.listv2.centeredic li {
         margin-bottom: 30px;
     }
 

@@ -394,6 +394,12 @@ img {
         }
     }
 
+    &.opacbg03 {
+        &::after {
+            background: rgba(#0E4271, 0.3);
+        }
+    }
+
     &.opacbg04 {
         &::after {
             background: rgba(#0E4271, 0.4);
