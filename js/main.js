@@ -250,4 +250,33 @@ $(document).ready(function () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+    // podcast+blog slider
+    var swiper2 = new Swiper(".blpodc", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+
+            1200: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
 })

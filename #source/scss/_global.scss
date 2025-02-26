@@ -238,6 +238,27 @@ img {
     }
 }
 
+.custom-tooltip {
+    .tooltip-inner {
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #DDE0E8;
+        color: #0E4271;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 140%;
+        font-family: "DegularText";
+        box-shadow: 0 10px 10px rgba(#000, 0.1);
+        border-radius: 10px;
+    }
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #fff;
+}
+
 
 @media(max-width:1599.8px) {
     h1 {
