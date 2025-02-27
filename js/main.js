@@ -273,7 +273,7 @@ $(document).ready(function () {
                 slidesPerView: 1,
             },
 
-            1200: {
+            992: {
                 slidesPerView: 2,
             },
         },
