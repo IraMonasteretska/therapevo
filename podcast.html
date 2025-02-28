@@ -165,33 +165,53 @@
         <div class="podcastsection">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 offset-xl-1">
-
+                    <div class="col-xl-6 offset-xl-1 col-lg-8 col-md-8">
+                        <div class="column add-bottom">
+                            <div id="mainwrap">
+                                <div id="nowPlay" class="topaudiosect">
+                                    <span id="npAction">Paused...</span><span id="npTitle"></span>
+                                </div>
+                                <div id="audiowrap">
+                                    <div id="audio0" class="mainaudio">
+                                        <audio id="audio1" preload controls>Your browser does not support HTML5
+                                            Audio! 😢</audio>
+                                    </div>
+                                    <div id="tracks">
+                                        <a id="btnPrev"><img src="img/podcast/tracks-left.svg" alt="prev"></a>
+                                        <a id="btnNext"><img src="img/podcast/tracks-right.svg" alt="next"></a>
+                                    </div>
+                                </div>
+                                <div id="plwrap">
+                                    <ul id="plList"></ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-3 offset-xl-1">
+
+                    <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-4">
                         <div class="podcastsection__sidebar bg-lightblue">
                             <h3>Episodes by Topic</h3>
                             <ul>
-                                <li><a href="#">Abuse</a></li>
-                                <li><a href="#">Communication</a></li>
-                                <li><a href="#">Conflict</a></li>
-                                <li><a href="#">Divorce</a></li>
-                                <li><a href="#">Emotions</a></li>
-                                <li><a href="#">Faith</a></li>
-                                <li><a href="#">Family</a></li>
-                                <li><a href="#">Finances</a></li>
-                                <li><a href="#">Housework</a></li>
-                                <li><a href="#">Infidelity</a></li>
-                                <li><a href="#">Marriage Growth</a></li>
-                                <li><a href="#">Parenting</a></li>
-                                <li><a href="#">Pornography</a></li>
-                                <li><a href="#">Power Struggles</a></li>
-                                <li><a href="#">Sex</a></li>
-                                <li><a href="#">Time Management</a></li>
-                                <li><a href="#">Trauma</a></li>
+                                <li><a href="#" data-track="10">Abuse</a></li>
+                                <li><a href="#" data-track="1">Communication</a></li>
+                                <li><a href="#" data-track="2">Conflict</a></li>
+                                <li><a href="#" data-track="3">Divorce</a></li>
+                                <li><a href="#" data-track="4">Emotions</a></li>
+                                <li><a href="#" data-track="5">Faith</a></li>
+                                <li><a href="#" data-track="6">Family</a></li>
+                                <li><a href="#" data-track="7">Finances</a></li>
+                                <li><a href="#" data-track="8">Housework</a></li>
+                                <li><a href="#" data-track="9">Infidelity</a></li>
+                                <li><a href="#" data-track="10">Marriage Growth</a></li>
+                                <li><a href="#" data-track="11">Parenting</a></li>
+                                <li><a href="#" data-track="12">Pornography</a></li>
+                                <li><a href="#" data-track="13">Power Struggles</a></li>
+                                <li><a href="#" data-track="10">Sex</a></li>
+                                <li><a href="#" data-track="2">Time Management</a></li>
+                                <li><a href="#" data-track="4">Trauma</a></li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -300,5 +320,224 @@
 <script src="js/lib/select2.js"></script>
 <script src="js/lib/plyr.js"></script>
 <script src="js/main.js"></script>
+
+
+
+<script>
+    jQuery(function ($) {
+        'use strict'
+        var supportsAudio = !!document.createElement('audio').canPlayType;
+        if (supportsAudio) {
+            // initialize plyr
+            var player = new Plyr('#audio1', {
+                controls: [
+                    // 'restart',
+                    'play',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings'
+                ]
+            });
+            // initialize playlist and controls
+            var index = 0,
+                playing = false,
+                // mediaPath = 'https://archive.org/download/MurotalMR/',
+                mediaPath = 'audio/',
+                extension = '',
+                tracks = [{
+                    "track": 1,
+                    "name": "Why Is My Spouse So Controlling? ",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                }, {
+                    "track": 2,
+                    "name": "Defining Emotionally Abusive Behavior",
+                    "date": "— June 24, 2020",
+                    "duration": "04:18",
+                    "file": "002"
+                }, {
+                    "track": 3,
+                    "name": "How Do I Know When/If I Can Trust My Spouse After Betrayal?",
+                    "date": "— May 27, 2020",
+                    "duration": "05:13",
+                    "file": "003"
+                },
+                {
+                    "track": 4,
+                    "name": "The 5 Pillars of Attachment",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 5,
+                    "name": "What Causes Infidelity?",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 6,
+                    "name": "How To Balance Parenting and Marriage (Even During a Pandemic)",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 7,
+                    "name": "How to Confront Your Husband About His Pornography Addiction",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 8,
+                    "name": "Key Things to Include When Disclosing Infidelity",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 9,
+                    "name": "6 Porn Groups To Help Your Recovery",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 10,
+                    "name": "Responding to The Rage of Your Betrayed Spouse",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 11,
+                    "name": "How Self-Compassion Can Help Your Marriage",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 12,
+                    "name": "4 Key Things to Avoid When Disclosing Infidelity",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },
+                {
+                    "track": 13,
+                    "name": "Overwhelmed or Flooded? Here's How To Calm Down During Conflict",
+                    "date": "— July 8, 2020",
+                    "duration": "03:53",
+                    "file": "001"
+                },],
+                buildPlaylist = $(tracks).each(function (key, value) {
+                    var trackNumber = value.track,
+                        trackName = value.name,
+                        trackDuration = value.duration,
+                        trackDate = value.date;
+
+                    if (trackNumber.toString().length === 1) {
+                        trackNumber = '0' + trackNumber;
+                    }
+                    $('#plList').append('<li> \
+                    <div class="plItem"> \
+                         <div class="plItem-wr"> \
+                        <span class="plNum">' + trackNumber + '.</span> \
+                        <span class="plTitle">' + trackName + '</span> \
+                        <span class="plDate"> ' + trackDate + '</span> \
+                        </div> \
+                        <span class="plLength">' + trackDuration + '</span> \
+                    </div> \
+                </li>');
+                }),
+                trackCount = tracks.length,
+                npAction = $('#npAction'),
+                npTitle = $('#npTitle'),
+                audio = $('#audio1').on('play', function () {
+                    playing = true;
+                    npAction.text('Now Playing...');
+                }).on('pause', function () {
+                    playing = false;
+                    npAction.text('Paused...');
+                }).on('ended', function () {
+                    npAction.text('Paused...');
+                    if ((index + 1) < trackCount) {
+                        index++;
+                        loadTrack(index);
+                        audio.play();
+                    } else {
+                        audio.pause();
+                        index = 0;
+                        loadTrack(index);
+                    }
+                }).get(0),
+                btnPrev = $('#btnPrev').on('click', function () {
+                    if ((index - 1) > -1) {
+                        index--;
+                        loadTrack(index);
+                        if (playing) {
+                            audio.play();
+                        }
+                    } else {
+                        audio.pause();
+                        index = 0;
+                        loadTrack(index);
+                    }
+                }),
+                btnNext = $('#btnNext').on('click', function () {
+                    if ((index + 1) < trackCount) {
+                        index++;
+                        loadTrack(index);
+                        if (playing) {
+                            audio.play();
+                        }
+                    } else {
+                        audio.pause();
+                        index = 0;
+                        loadTrack(index);
+                    }
+                }),
+                li = $('#plList li').on('click', function () {
+                    var id = parseInt($(this).index());
+                    if (id !== index) {
+                        playTrack(id);
+                    }
+                }),
+                loadTrack = function (id) {
+                    $('.plSel').removeClass('plSel');
+                    $('#plList li:eq(' + id + ')').addClass('plSel');
+                    npTitle.text(tracks[id].name);
+                    index = id;
+                    audio.src = mediaPath + tracks[id].file + extension;
+                },
+                playTrack = function (id) {
+                    loadTrack(id);
+                    audio.play();
+                };
+            extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
+            loadTrack(index);
+        } else {
+            $('.column').addClass('hidden');
+            var noSupport = $('#audio1').text();
+            $('.container').append('<p class="no-support">' + noSupport + '</p>');
+        }
+
+        $("ul li a").on("click", function (e) {
+            e.preventDefault(); 
+
+            var trackIndex = $(this).data("track"); 
+
+            if (typeof trackIndex !== "undefined" && trackIndex < tracks.length) {
+                playTrack(trackIndex); 
+            }
+        });
+    });
+</script>
 
 </html>

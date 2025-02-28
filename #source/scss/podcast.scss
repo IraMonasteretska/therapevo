@@ -78,3 +78,258 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+// player
+
+.podcastsection {
+    color: #0E4271;
+}
+
+.topaudiosect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.mainaudio {
+    box-shadow: 1px 2px 15px rgba(#0E4271, 0.1);
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 28px;
+
+    .plyr__control svg {
+        width: 22px;
+        height: 25px;
+    }
+
+    .mainaudio .plyr__control svg {
+        width: 39px;
+        height: 30px;
+    }
+
+
+    .plyr--audio .plyr__control:hover:before {
+        background: #C7E3F8;
+    }
+
+    .plyr--audio .plyr__progress__buffer {
+        opacity: 0;
+    }
+
+    .plyr--audio input[type="range"]::-webkit-slider-runnable-track {
+        height: 10px;
+        border-radius: 10px;
+
+    }
+
+    .plyr--audio input[type="range"]::-moz-range-track {
+        height: 12px;
+        border-radius: 10px;
+
+    }
+
+    .plyr--audio input[type="range"]::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+        margin-top: -5px;
+        border: 5px solid #fff;
+        background: #C7E3F8;
+    }
+
+    .plyr--audio .plyr__control:focus-visible,
+    .plyr--audio .plyr__control:hover,
+    .plyr--audio .plyr__control[aria-expanded=true] {
+        background: #0E4271
+    }
+
+    .plyr__control {
+        svg {
+            fill: #0E4271;
+        }
+
+        &:hover {
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    .plyr__controls .plyr__controls__item.plyr__time {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}
+
+#tracks {
+    text-align: center;
+    margin-bottom: 28px;
+
+    a {
+        margin: 0 14px;
+
+        img {
+            width: 40px;
+        }
+    }
+}
+
+#plList {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .plItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &.plSel {
+            background: #E2F0F9;
+        }
+
+        &:hover {
+            background: rgba(#E2F0F9, 0.3);
+        }
+    }
+}
+
+.plNum {
+    padding-right: 5px;
+}
+
+
+// single
+
+.mainaudio .plyr--audio .plyr__control[aria-expanded=true] svg {
+    fill: #fff;
+}
+
+.podcast-content {
+    padding: 0 0 80px 0;
+    position: relative;
+    z-index: 3;
+    margin-top: -50px;
+
+    .mainaudio {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        margin-bottom: 80px;
+    }
+}
+
+.podcsingwrapp {
+    // color: #0E4271;
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:1399.8px) {
+    .podcastsection__sidebar {
+        padding: 24px;
+
+        ul li {
+            margin-bottom: 8px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .podcastsection__sidebar h3 {
+        margin-bottom: 16px;
+    }
+
+    .podcastsection {
+        padding: 100px 0 60px;
+    }
+
+    .mainaudio {
+        margin-bottom: 16px;
+        padding: 10px 15px;
+    }
+
+    .rdytostart p+h4 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .podcastsection__sidebar ul li a:after {
+        top: -2px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .podcastsection__sidebar {
+        padding: 20px;
+    }
+
+    .podcastsection__sidebar h3 {
+        font-size: 24px;
+    }
+
+    .podcastsection__sidebar ul li a {
+        padding-left: 28px;
+    }
+
+    .podcastsection {
+        padding: 80px 0 60px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .podcastsection__sidebar {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .mainaudio {
+        padding: 0;
+    }
+
+    .podcastsection {
+        padding: 60px 0;
+    }
+
+    .topaudiosect {
+        margin-bottom: 16px;
+    }
+}

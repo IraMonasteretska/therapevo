@@ -241,7 +241,7 @@ $(document).ready(function () {
     $('.faqsection .linkarrow').click(function (e) {
         e.preventDefault();
         $('.faq').toggleClass('active');
-    
+
         let buttonText = $(this).find('span').text().trim();
         $(this).find('span').text(buttonText === "View More FAQs" ? "View Less FAQs" : "View More FAQs");
     });
@@ -278,5 +278,23 @@ $(document).ready(function () {
             },
         },
     });
+
+    // podcasts
+    if ($('.pcsingle-audio').length) {
+        const player = new Plyr('audio', {
+            controls: [
+                // 'restart',
+                'play',
+                'progress',
+                'current-time',
+                'duration',
+                'mute',
+                'volume',
+                'settings'
+            ]
+        });
+        window.player = player;
+    }
+
 
 })
