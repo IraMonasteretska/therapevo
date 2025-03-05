@@ -296,5 +296,37 @@ $(document).ready(function () {
         window.player = player;
     }
 
+    // blog checkboxes
+    $('.bs-select').click(function(){
+        $('.bs-dropdown').toggleClass('open');
+    });
+
+
+    const checkboxes = document.querySelectorAll(".bs-checkwrap input[type='checkbox']");
+    const selectedText = document.querySelector(".bs-select p");
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", () => {
+            updateSelectedText();
+        });
+    });
+
+    function updateSelectedText() {
+        let selectedLabels = [];
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selectedLabels.push(checkbox.nextElementSibling.textContent);
+            }
+        });
+
+        selectedText.textContent = selectedLabels.length ? selectedLabels.join(", ") : "Sort by";
+    }
+
+
+
+
+
+
+
 
 })

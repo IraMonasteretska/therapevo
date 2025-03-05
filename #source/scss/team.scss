@@ -266,27 +266,29 @@
         margin-bottom: 20px;
     }
 
-    .paginatcust {
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    
+}
 
-            li {
-                width: 8px;
-                height: 8px;
-                border: 1px solid #0E4271;
-                border-radius: 50%;
-                margin: 0 4px;
+.paginatcust {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-                &.active {
-                    width: 16px;
-                    height: 16px;
-                    background: #0E4271;
-                }
+        li {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #0E4271;
+            border-radius: 50%;
+            margin: 0 4px;
+
+            &.active {
+                width: 16px;
+                height: 16px;
+                background: #0E4271;
             }
         }
     }
