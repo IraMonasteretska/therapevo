@@ -427,12 +427,113 @@
     max-width: 385px;
 }
 
+
+// single
+.podcast-content.blogsingle {
+    margin-top: 0;
+    padding-top: 40px;
+
+    ol {
+        padding-left: 20px;
+    }
+
+    .podcsingbottomsect {
+        margin-top: 50px;
+    }
+}
+
+.blsingcolorbox {
+    border-radius: 10px;
+    padding: 57px 180px;
+    position: relative;
+    margin-bottom: 40px;
+
+    h3 {
+        margin: 0 0 24px 0;
+        line-height: 110%;
+    }
+
+    .el1,
+    .el2 {
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    .el1 {
+        left: 28px;
+        top: 28px;
+        width: 120px;
+    }
+
+    .el2 {
+        right: 28px;
+        bottom: 28px;
+        width: 152px;
+    }
+}
+
+.podcsingwrapp .ginbox {
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.podcsingwrapp .ginbox.v2 .ginbox__right {
+    max-width: 230px;
+    flex: 0 0 230px;
+
+    .bluebtn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.podcsingwrapp .ginbox.v2 .ginbox__left {
+    max-width: calc(100% - 230px);
+    flex: 0 0 calc(100% - 230px);
+}
+
+.rdytosbegin .imgwrap img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1599.8px) {
+    .infpic .v2 ul>li br,
+    .horsteps.bg-mainblue .horsteps__box p br {
+        display: none;
+    }
+    
+}
+
 @media(max-width:1399.8px) {
 
     .rdytosbegin .descr-wrap p br {
         display: none;
     }
 
+    .podcast-content {
+        padding-bottom: 80px;
+    }
 
 }
 
@@ -450,14 +551,22 @@
         overflow: hidden;
     }
 
+    .blsingcolorbox h3,
+    .podcsingwrapp .ginbox p {
+        margin-bottom: 16px;
+    }
+
 
 }
 
 @media(max-width:991.8px) {
+
     .popposts,
     .recentposts {
         padding: 80px 0;
     }
+
+    
 }
 
 @media(max-width:767.8px) {
@@ -505,6 +614,16 @@
     .recentpost .descr p {
         -webkit-line-clamp: inherit;
     }
+
+    .blsingcolorbox .el1,
+    .blsingcolorbox .el2 {
+        display: none;
+    }
+
+    .blsingcolorbox {
+        padding: 30px;
+    }
+
 }
 
 @media(max-width:575.8px) {
@@ -541,4 +660,19 @@
     .recentposts__header {
         margin-bottom: 20px;
     }
+
+    .podcsingwrapp .ginbox.v2 .ginbox__left,
+    .podcsingwrapp .ginbox.v2 .ginbox__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .podcast-content.blogsingle .podcsingbottomsect {
+        margin-top: 30px;
+    }
+
+    .podcast-content.blogsingle {
+        padding-bottom: 60px;
+    }
+
 }
