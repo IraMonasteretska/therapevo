@@ -498,9 +498,6 @@
     flex: 0 0 calc(100% - 230px);
 }
 
-.rdytosbegin .imgwrap img {
-    max-width: 100%;
-}
 
 
 
@@ -517,13 +514,9 @@
 
 
 
-@media(max-width:1599.8px) {
-    .infpic .v2 ul>li br,
-    .horsteps.bg-mainblue .horsteps__box p br {
-        display: none;
-    }
-    
-}
+
+
+
 
 @media(max-width:1399.8px) {
 
@@ -531,9 +524,6 @@
         display: none;
     }
 
-    .podcast-content {
-        padding-bottom: 80px;
-    }
 
 }
 
@@ -551,11 +541,6 @@
         overflow: hidden;
     }
 
-    .blsingcolorbox h3,
-    .podcsingwrapp .ginbox p {
-        margin-bottom: 16px;
-    }
-
 
 }
 
@@ -565,8 +550,6 @@
     .recentposts {
         padding: 80px 0;
     }
-
-    
 }
 
 @media(max-width:767.8px) {
@@ -614,16 +597,6 @@
     .recentpost .descr p {
         -webkit-line-clamp: inherit;
     }
-
-    .blsingcolorbox .el1,
-    .blsingcolorbox .el2 {
-        display: none;
-    }
-
-    .blsingcolorbox {
-        padding: 30px;
-    }
-
 }
 
 @media(max-width:575.8px) {
@@ -660,19 +633,4 @@
     .recentposts__header {
         margin-bottom: 20px;
     }
-
-    .podcsingwrapp .ginbox.v2 .ginbox__left,
-    .podcsingwrapp .ginbox.v2 .ginbox__right {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .podcast-content.blogsingle .podcsingbottomsect {
-        margin-top: 30px;
-    }
-
-    .podcast-content.blogsingle {
-        padding-bottom: 60px;
-    }
-
 }
