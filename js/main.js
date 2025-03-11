@@ -280,20 +280,36 @@ $(document).ready(function () {
     });
 
     // podcasts
+    // if ($('.pcsingle-audio').length) {
+    //     const player = new Plyr('audio', {
+    //         controls: [
+    //             // 'restart',
+    //             'play',
+    //             'progress',
+    //             'current-time',
+    //             'duration',
+    //             'mute',
+    //             'volume',
+    //             'settings'
+    //         ]
+    //     });
+    //     window.player = player;
+    // }
+
     if ($('.pcsingle-audio').length) {
-        const player = new Plyr('audio', {
-            controls: [
-                // 'restart',
-                'play',
-                'progress',
-                'current-time',
-                'duration',
-                'mute',
-                'volume',
-                'settings'
-            ]
+        $('.pcsingle-audio audio').each(function () {
+            new Plyr(this, {
+                controls: [
+                    'play',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings'
+                ]
+            });
         });
-        window.player = player;
     }
 
     // blog checkboxes
