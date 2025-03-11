@@ -322,6 +322,7 @@
         position: relative;
         overflow: hidden;
         border-radius: 10px;
+        height: 203px;
 
         img {
             width: 100%;
@@ -566,6 +567,9 @@
         padding: 80px 0;
     }
 
+    .recentpost .imgwrap {
+        height: 170px;
+    }
     
 }
 
@@ -673,6 +677,10 @@
 
     .podcast-content.blogsingle {
         padding-bottom: 60px;
+    }
+
+    .recentpost .imgwrap {
+        height: 150px;
     }
 
 }

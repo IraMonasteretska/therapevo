@@ -120,12 +120,33 @@
                     }
                 }
 
-                p {
+                p, a {
                     margin: 0;
                     color: #0E4271;
                     font-size: 21px;
                     font-weight: 500;
                     line-height: 130%;
+                }
+
+                a {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: 0.3s;
+                        background: #0E4271;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
