@@ -339,6 +339,19 @@
     }
 }
 
+.meettherapist .imgwrap  {
+    height: 250px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
 @media(max-width:1599.8px) {
 
     .teaminfo .teaminfo-wrapper {
@@ -596,5 +609,9 @@
     
     .tmshedacons__block .descr {
         padding: 20px 15px 25px 15px;
+    }
+
+    .meettherapist .imgwrap  {
+        height: auto;
     }
 }
