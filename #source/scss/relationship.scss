@@ -404,7 +404,12 @@
 
     h3 {
         color: #0E4271;
-        margin-bottom: 77px;
+        margin-bottom: 60px;
+    }
+    .descr{
+        color: #0E4271;
+        max-width: 700px;
+        margin: 0 auto 60px;
     }
 }
 
@@ -1806,6 +1811,12 @@
 
 
 
+    .benefitssect {
+        .descr{
+            margin: 0 auto 0px;
+        }
+    }
+    
 
 
 

@@ -283,9 +283,12 @@
     }
 
     .descr {
+
+        h1,
         h2 {
             color: #0E4271;
             margin-bottom: 28px;
+            font-size: 51px;
         }
 
         h6 {
@@ -404,6 +407,11 @@
 
 @media(max-width:1599.8px) {
 
+    .coordinatorsect .descr h1,
+    .coordinatorsect .descr h2 {
+        font-size: 46px;
+    }
+
     .coordinatorsect .descr p,
     .coordinatorsect .descr h6,
     .coordinatorsect .descr h2,
@@ -423,6 +431,12 @@
 }
 
 @media(max-width:1399.8px) {
+
+    .coordinatorsect .descr h1,
+    .coordinatorsect .descr h2 {
+        font-size: 42px;
+    }
+    
     .coordinatorsect .descr h6 br {
         display: none;
     }
@@ -442,6 +456,11 @@
 }
 
 @media(max-width:991.8px) {
+
+    .coordinatorsect .descr h1,
+    .coordinatorsect .descr h2 {
+        font-size: 38px;
+    }
     .coordinatorsect .imgwrap {
         margin-bottom: 20px;
 
@@ -478,6 +497,11 @@
 }
 
 @media(max-width:767.8px) {
+    .coordinatorsect .descr h1,
+    .coordinatorsect .descr h2 {
+        font-size: 32px;
+    }
+
     .coordhelp p {
         margin-bottom: 20px;
     }
@@ -511,8 +535,3 @@
         padding-bottom: 0;
     }
 }
-
-
-
-
-

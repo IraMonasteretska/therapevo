@@ -11,9 +11,12 @@
     }
 
     .descr {
+
+        h1,
         h2 {
             margin-bottom: 16px;
             color: #0E4271;
+            font-size: 51px;
         }
 
         h4 {
@@ -120,7 +123,8 @@
                     }
                 }
 
-                p, a {
+                p,
+                a {
                     margin: 0;
                     color: #0E4271;
                     font-size: 21px;
@@ -130,6 +134,7 @@
 
                 a {
                     position: relative;
+
                     &::after {
                         content: '';
                         display: block;
@@ -257,6 +262,12 @@
 
 
 
+@media(max-width: 1599.8px) {
+    .biomainsect .descr h1,
+    .biomainsect .descr h2 {
+        font-size: 46px;
+    }
+}
 @media(max-width: 1399.8px) {
 
     .biomainsect .descr .lang ul {
@@ -299,9 +310,19 @@
     .biomainsect .descr p {
         margin-bottom: 16px;
     }
+
+    .biomainsect .descr h1,
+    .biomainsect .descr h2 {
+        font-size: 42px;
+    }
 }
 
 @media(max-width: 991.8px) {
+
+    .biomainsect .descr h1,
+    .biomainsect .descr h2 {
+        font-size: 38px;
+    }
 
     .biomainsect .descr h2,
     .biomainsect .descr h4,
@@ -363,6 +384,11 @@
 }
 
 @media(max-width: 767.8px) {
+
+    .biomainsect .descr h1,
+    .biomainsect .descr h2 {
+        font-size: 32px;
+    }
     .biomainsect .imgwrap {
         margin-bottom: 20px;
     }
