@@ -31,8 +31,17 @@
 }
 
 @font-face {
+    font-family: 'DegularDisplay';
+    src: url('../fonts/DegularDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'AdobeClean';
     src: url('../fonts/AdobeClean-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+

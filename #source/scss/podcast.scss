@@ -510,6 +510,32 @@
     }
 }
 
+// --------------------------
+.rdytostart p {
+    font-size: 16px;
+    line-height: 145%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.podcast-content~.rdytostart.v4 .el2 {
+    top: 31px;
+    right: 15%;
+}
+
+.podcast-content~.rdytostart.v4 .el1 {
+    top: 64px;
+    left: 18%;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:1599.8px) {
@@ -557,6 +583,17 @@
         padding: 40px;
         margin: 50px 0;
     }
+
+    .podcast-content~.rdytostart.v4 .el2 {
+        right: 10%;
+    }
+
+    .podcast-content~.rdytostart.v4 .el1 {
+        left: 15%;
+    }
+
+
+
 }
 
 @media(max-width:1199.8px) {
@@ -657,7 +694,7 @@
     .hero-pages.herov2-2 .hero-pages__content {
         padding-bottom: 60px;
     }
-    
+
     .mainaudio {
         overflow: hidden;
     }
