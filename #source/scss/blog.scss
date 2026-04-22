@@ -608,6 +608,91 @@
     margin: 0 auto;
 }
 
+// -
+.cta-section {
+    padding: 100px 0;
+    background: #E2F0F9;
+
+    .descr-wrap {
+        max-width: 495px;
+    }
+
+    h2 {
+        margin-bottom: 28px;
+        color: #0E4271;
+    }
+
+    p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 145%;
+        font-weight: 500;
+        font-family: 'DegularText';
+        color: #0E4271;
+    }
+
+    .bluebtn {
+        margin-top: 28px;
+    }
+
+    .imgwrap {
+        img {
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+    }
+}
+
+.keepreading__header {
+    margin-bottom: 40px;
+
+    h4 {
+        margin: 0;
+    }
+}
+
+.explorelink {
+    text-transform: uppercase;
+    color: #0E4271;
+    font-size: 14px;
+    line-height: 110%;
+    display: inline-block;
+    position: relative;
+    padding-right: 22px;
+
+    img {
+        width: 18px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -1px;
+        transition: 0.3s;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        bottom: -5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 1px;
+        background: #0E4271;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: #0E4271;
+
+        &::after {
+            width: 0;
+        }
+    }
+}
 
 
 @media(max-width:1599.8px) {
@@ -615,6 +700,10 @@
     .infpic .v2 ul>li br,
     .horsteps.bg-mainblue .horsteps__box p br {
         display: none;
+    }
+
+    .cta-section .descr-wrap {
+        max-width: 440px;
     }
 
 }
@@ -627,6 +716,14 @@
 
     .podcast-content {
         padding-bottom: 80px;
+    }
+
+    .cta-section h2 {
+        margin-bottom: 15px;
+    }
+
+    .cta-section .bluebtn {
+        margin-top: 20px;
     }
 
 }
@@ -668,7 +765,14 @@
         font-size: 56px;
     }
 
+    .cta-section .descr-wrap {
+        max-width: 100%;
+        padding-right: 40px;
+    }
 
+    .cta-section {
+        padding: 70px 0;
+    }
 
 }
 
@@ -725,6 +829,22 @@
 
     .blsingcolorbox {
         padding: 30px;
+    }
+
+    .cta-section .imgwrap {
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cta-section h2 br {
+        display: none;
+    }
+
+    .cta-section .descr-wrap {
+        padding-right: 0;
     }
 
 }
@@ -805,7 +925,13 @@
         margin-top: 30px;
     }
 
-    .podcsingwrapp>h5{
+    .podcsingwrapp>h5 {
         font-size: 18px;
     }
+
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    
 }
