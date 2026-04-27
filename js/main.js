@@ -313,7 +313,7 @@ $(document).ready(function () {
     }
 
     // blog checkboxes
-    $('.bs-select').click(function(){
+    $('.bs-select').click(function () {
         $('.bs-dropdown').toggleClass('open');
     });
 
@@ -339,7 +339,31 @@ $(document).ready(function () {
     }
 
 
+    // new podcasts
+    var swiper = new Swiper(".episodes-slider", {
+        slidesPerView: 1,
+        spaceBetween: 21,
+        loop: true,
+        speed: 700,
+        navigation: {
+            nextEl: ".swiper-button-next.hdr",
+            prevEl: ".swiper-button-prev.hdr",
+        },
+            autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
 
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 21,
+            },
+        },
+    });
 
 
 
